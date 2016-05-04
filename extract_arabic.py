@@ -9,6 +9,7 @@ def extract_lines_add_tags(i_file, regex, tag):
 
     ret = []
 
+
     with open(i_file, "r") as f:
         for i, line in enumerate(f):
             match = re.search(regex, line)
@@ -27,9 +28,46 @@ def main():
     # A regex to match all Arabic characters
     arabic_re = "[\u0600-\u06FF]+"
     tag = ['<lang type="A">', '</lex>']
+    XML = "</?[A-Za-z0-9]+/?>"
 
     results = extract_lines_add_tags(i_file, arabic_re, tag)
+    print()
     for no, matches, line, newline in results:
-        print("Line: {0}\nMatch(es): {1}\nOriginal Line:\n{2}Line With Tags:\n{3}".format(no, matches, line, newline))
+        no_tags = re.sub(XML, "", line)
+        no_tags = re.sub("_", " ", no_tags)
+
+        # Check for etymologies given in text
+        if "Pers" in line and "Arab" in line:
+            guess = "Persian and Arabic"
+        elif "Pers" in line:
+            guess = "Persian"
+        elif "Arab" in line:
+            guess = "Arabic"
+        else:
+            guess = False
+
+        if guess:
+            beginning = """* TODO {0}
+
+** Guess
+{1}""".format(", ".join(matches), guess)
+        else:
+            beginning = "* {0}".format(", ".join(matches))
+
+        # Print the rest
+        print("""{1}
+
+** Decision
+
+
+** Line w/o XML:
+{3}
+** Original Line:
+#+begin_example xml
+{2}#+end_example
+
+** Line:
+{0}
+""".format(no, beginning, line, no_tags))
 
 main()
