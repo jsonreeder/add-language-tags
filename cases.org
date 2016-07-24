@@ -213,8 +213,12 @@ From Old Turkish
 #+end_example
 *** Line:
 68824
-** غزنوى
+** DONE غزنوى
+CLOSED: [2016-07-24 Sun 13:45]
 *** Decision
+Arabic
+*** Justification
+The derivation of غزنوى from غزني is Arabic, though it may also be Persian.
 *** Line w/o XML:
 000gajanavI1gajanavI = غزنوى .  041352 342,3 62458
 *** Original Line:
@@ -421,8 +425,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 94048
-** توت
+** DONE توت
+CLOSED: [2016-07-24 Sun 13:58]
 *** Decision
+Persian
+*** Justification
+There is not much context given with this definition, but the Persian word (with the sense of "berry") seems to be the source of the equivalents in Arabic and Turkish, so Persian is most likely.
 *** Line w/o XML:
 100tUda1tUda <lex type="inh">m.   tUta  توت  Npr. 452,3 86395
 *** Original Line:
@@ -537,8 +545,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 137219
-** پيشاور
+** DONE پيشاور
+CLOSED: [2016-07-24 Sun 13:53]
 *** Decision
+Persian
+*** Justification
+Seems to be derived from Sanskrit "Puruṣapura." Candidate for either Persian or Hindustani but preference given to Persian since the dictionary recognizes very few Hindustani etymologies.
 *** Line w/o XML:
 110puruzapura3p/uruza--pura n. N. of the capital of Ga1ndha1ragAnDAra , the modern <as0 type="ns">Pesha1warPeshawar  پيشاور  L. 081125 637,2 126512
 *** Original Line:
@@ -721,8 +733,12 @@ From Old Turkish
 #+end_example
 *** Line:
 158064
-** بهرام
+** DONE بهرام
+CLOSED: [2016-07-24 Sun 13:54]
 *** Decision
+Persian
+*** Justification
+Established etymology in Middle Persian, Avestan.
 *** Line w/o XML:
 110bahrAmaKAna1bahrAmaKAna m. = بهرام خان  091719 727,2 144224
 *** Original Line:
@@ -963,8 +979,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 178366
-** غزنوى
+** DONE غزنوى
+CLOSED: [2016-07-24 Sun 13:43]
 *** Decision
+Arabic
+*** Justification
+The derivation of غزنوى from غزني is Arabic, though it may also be Persian.
 *** Line w/o XML:
 110mAmudagajanavI1mAmuda-gajanavI m. = محمود غزنوى <as0 type="ns">Mahmu1dMahmud of <as0 type="ns">Ghazni1Ghazni Kshiti7s3.  103554 811,1 163075
 *** Original Line:
