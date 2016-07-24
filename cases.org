@@ -336,8 +336,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 91640
-** تثليث
+** DONE تثليث
+CLOSED: [2016-07-23 Sat 22:53]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110taSlI1taSlI f. in astron. = تثليث , trigon.  054196 441,2 83643
 *** Original Line:
@@ -346,8 +350,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 92078
-** تسيير
+** DONE تسيير
+CLOSED: [2016-07-23 Sat 22:54]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000tasIra1tasIra in astron.  tAS ,  تسيير .  054204 441,2 83658
 *** Original Line:
@@ -356,8 +364,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 92093
-** تسْديس
+** DONE تسْديس
+CLOSED: [2016-07-23 Sat 22:54]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000tasdI1tasdI in astron. = تسْديس , hexagon.  054217 441,2 83680
 *** Original Line:
@@ -772,8 +784,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 172311
-** ملك
+** DONE ملك
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110malika1malika m. = ملك   a king Cat.  101107 792,3 158835
 *** Original Line:
@@ -782,8 +798,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 173691
-** محمد
+** DONE محمد
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mahamadaedala1mahamada-edala m. = محمد عادِل N. of a prince Cat.  102607 803,3 161628
 *** Original Line:
@@ -792,8 +812,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 176840
-** عادِل
+** DONE عادِل
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mahamadaedala1mahamada-edala m. = محمد عادِل N. of a prince Cat.  102607 803,3 161628
 *** Original Line:
@@ -802,8 +826,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 176840
-** محمد
+** DONE محمد
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mahammada1mahammada m. = محمد N. of a king ib.  102608 803,3 161629
 *** Original Line:
@@ -812,8 +840,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 176841
-** محمد
+** DONE محمد
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mahmadaKAna1mahmada-KAna m. = محمد خان N. of a man Cat.  102649 804,1 161680
 *** Original Line:
@@ -832,8 +864,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 176894
-** محمود
+** DONE محمود
+CLOSED: [2016-07-23 Sat 22:56]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mAmudagajanavI1mAmuda-gajanavI m. = محمود غزنوى <as0 type="ns">Mahmu1dMahmud of <as0 type="ns">Ghazni1Ghazni Kshiti7s3.  103554 811,1 163075
 *** Original Line:
@@ -888,8 +924,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 180015
-** مقارنة
+** DONE مقارنة
+CLOSED: [2016-07-23 Sat 22:57]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mukAriRA1mukAriRA f. = مقارنة in astrol. a partic. position or conjunction of the planets.  104634 819,2 164744
 *** Original Line:
@@ -898,8 +938,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 180184
-** مقابلة
+** DONE مقابلة
+CLOSED: [2016-07-23 Sat 22:57]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mukAvilA1mukAvilA f. = مقابلة  id.  104635 819,2 164745
 *** Original Line:
@@ -908,8 +952,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 180185
-** مُتّصِل
+** DONE مُتّصِل
+CLOSED: [2016-07-23 Sat 22:57]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000muTaSila1muTaSila = مُتّصِل in astrol. N. of the third Yogayoga.  105098 822,2 165445
 *** Original Line:
@@ -918,8 +966,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 180929
-** منتهى
+** DONE منتهى
+CLOSED: [2016-07-23 Sat 22:57]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000munTahA1munTahA = منتهى , an astrol. term.  105246 823,2 165685
 *** Original Line:
@@ -928,8 +980,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 181180
-** مرشد
+** DONE مرشد
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000murasidAbAda1murasidAbAda = مرشد آباد Murshidabad , N. of a city Kshiti7s3.  105289 823,3 165748
 *** Original Line:
@@ -948,8 +1004,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 181245
-** مراد
+** DONE مراد
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110murAda1murAda m. = مراد ,  N. of a man ib.  105290 823,3 165749
 *** Original Line:
@@ -958,8 +1018,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 181246
-** مصالحة
+** DONE مصالحة
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000muSallaha1muSallaha = مصالحة  reconciliation  , an astrol. term.  105356 824,1 165857
 *** Original Line:
@@ -968,8 +1032,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 181357
-** مُصرِف
+** DONE مُصرِف
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 003mUsariHPa1mUsariHPa and mUsarIPa = مُصرِف in astrol. N. of the fourth Yogayoga.  105901 827,2 166606
 *** Original Line:
@@ -978,8 +1046,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 182139
-** مسلم
+** DONE مسلم
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110mOsula1mOsula m. = مسلم a Moslim , <as0 type="ns">Musalma1nMusalman Cat.  107367 837,2 168862
 *** Original Line:
@@ -988,8 +1060,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 184492
-** جمعة
+** DONE جمعة
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 000yamayA1yamayA said to be equal to جمعة , N. of the 6th astronomical Yogayoga.  108705 847,1 170608
 *** Original Line:
@@ -1030,8 +1106,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 202268
-** وداع
+** DONE وداع
+CLOSED: [2016-07-23 Sat 22:58]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 100vidAya3vi-dAya <lex type="inh">m. permission to go away , dismissal with good wishes in this sense perhaps not a <as0 type="ns">San6skr2itSanskrit word~;~  وداع .  124584 965,3 196113
 *** Original Line:
@@ -1074,8 +1154,12 @@ Arabic
 #+end_example
 *** Line:
 235138
-** صاحب
+** DONE صاحب
+CLOSED: [2016-07-23 Sat 22:59]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110SAheva1SAheva m. prob.  =  صاحب  , Ra1jat.  136162 1069,3 216479
 *** Original Line:
