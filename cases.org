@@ -231,8 +231,12 @@ ganjvar?
 #+end_example
 ** Line:
 69488
-* غير
+* DONE غير
+CLOSED: [2016-07-23 Sat 21:24]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 003gErakaMvUla1gEra-kaMvUla or ri-k fr.  غير and قَبول  , the 9th Yogayoga in astron.  044078 363,3 66883
 ** Original Line:
@@ -241,8 +245,12 @@ ganjvar?
 #+end_example
 ** Line:
 74136
-* قَبول
+* DONE قَبول
+CLOSED: [2016-07-23 Sat 21:25]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 003gErakaMvUla1gEra-kaMvUla or ri-k fr.  غير and قَبول  , the 9th Yogayoga in astron.  044078 363,3 66883
 ** Original Line:
@@ -251,8 +259,12 @@ ganjvar?
 #+end_example
 ** Line:
 74136
-* غلام
+* DONE غلام
+CLOSED: [2016-07-23 Sat 21:26]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 000golAmamAmuda1golAma-mAmuda  غلام محمود .  044642 368,3 68039
 ** Original Line:
@@ -261,8 +273,12 @@ ganjvar?
 #+end_example
 ** Line:
 75415
-* محمود
+* DONE محمود
+CLOSED: [2016-07-23 Sat 21:27]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 000golAmamAmuda1golAma-mAmuda  غلام محمود .  044642 368,3 68039
 ** Original Line:
@@ -281,8 +297,12 @@ ganjvar?
 #+end_example
 ** Line:
 88325
-* تموير
+* DONE تموير
+CLOSED: [2016-07-23 Sat 21:27]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 000tambIra1tambIra = تموير , in astrol. the 14th Yogayoga. Page438,3  053822 83016
 ** Original Line:
@@ -301,8 +321,12 @@ ganjvar?
 #+end_example
 ** Line:
 91605
-* تربيع
+* DONE تربيع
+CLOSED: [2016-07-23 Sat 21:27]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 000taravI1taravI in astrol.  تربيع , quadrature.  053935 439,2 83248
 ** Original Line:
