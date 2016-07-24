@@ -41,7 +41,7 @@ CLOSED: [2016-07-23 Sat 20:40]
 ** Decision
 Arabic
 ** Justification
-Transparent Arabic derivation
+Dictionary gives etymology
 ** Line w/o XML:
 000ikkavAla1ikkavAla in astrology = إِقْبال , good fortune , prosperity.  020138 163,3 28563
 ** Original Line:
@@ -50,10 +50,14 @@ Transparent Arabic derivation
 #+end_example
 ** Line:
 32966
-* TODO إِتٍّصال
+* DONE إِتٍّصال
+CLOSED: [2016-07-23 Sat 20:45]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 000itTaSAla1itTaSAla fr. Arabic إِتٍّصال   , N. of the third Yogayoga in astronomy.  020293 165,2 28796
 ** Original Line:
@@ -62,10 +66,14 @@ Arabic
 #+end_example
 ** Line:
 33268
-* TODO إِنْتِها
+* DONE إِنْتِها
+CLOSED: [2016-07-23 Sat 20:45]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110inTihA1inTihA f. fr. Arabic إِنْتِها   , an astrological term.  020329 165,3 28844
 ** Original Line:
@@ -74,10 +82,14 @@ Arabic
 #+end_example
 ** Line:
 33335
-* TODO إِدْبار
+* DONE إِدْبار
+CLOSED: [2016-07-23 Sat 20:46]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110induvAra3/indu--vAra m. in astrology = the Arabic إِدْبار . 020379 166,1 28915
 ** Original Line:
@@ -86,10 +98,14 @@ Arabic
 #+end_example
 ** Line:
 33419
-* TODO قبول
+* DONE قبول
+CLOSED: [2016-07-23 Sat 20:46]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110kaMvUla1kaMvUla n. in astrol.  N. of the eighth Yogayoga , = Arabic قبول .  028411 241,1 41367
 ** Original Line:
@@ -98,10 +114,14 @@ Arabic
 #+end_example
 ** Line:
 47127
-* TODO قلم
+* DONE قلم
+CLOSED: [2016-07-23 Sat 20:50]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 100kalama1kalama <lex type="inh">m. a reed for writing with ; cf.~Lat.~calamus~~;~~Gk. 1~~;~~and Arab. قلم  260,3 45730
 ** Original Line:
@@ -110,10 +130,14 @@ Arabic
 #+end_example
 ** Line:
 51841
-* TODO قبول
+* DONE قبول
+CLOSED: [2016-07-23 Sat 20:53]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110kavUla1kavUla n. in astrol.  = Arabic قبول ; ~kaMvUla.  031556 265,1 46627
 ** Original Line:
@@ -122,10 +146,16 @@ Arabic
 #+end_example
 ** Line:
 52814
-* TODO كودك
+* DONE كودك
+CLOSED: [2016-07-23 Sat 20:50]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
+** Guess
+Persian
 ** Line w/o XML:
 100kzudra2kzudr/a n. a particle of dust , flour , meal RV. i , 129 , 6 and viii , 49 , 4 ; cf.~Lith.~kUdikis~,~ an infant  ; Pers. كودك ~kUdak~,~ small a boy.  039696  330,3 59907
 ** Original Line:
@@ -134,10 +164,14 @@ Persian
 #+end_example
 ** Line:
 66788
-* TODO خربوزه
+* DONE خربوزه
+CLOSED: [2016-07-23 Sat 20:53]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110KarbUja1KarbUja  n. fr. the Pers. خربوزه ~,~kkarbUSa , the water-melon Bhpr. v , 6 , 43 f.   040712 338,1 61560
 ** Original Line:
@@ -166,9 +200,12 @@ Persian
 #+end_example
 ** Line:
 69473
-* HOLD گنج
+* DONE گنج
+CLOSED: [2016-07-23 Sat 20:54]
 ** Decision
-Related to كنز
+Persian
+** Note
+Related to Arabic كنز but must directly from Persian
 ** Line w/o XML:
 110gaYja1gaYja2  mn. = گنج a treasury , jewel room , place where plate  is preserved Ra1jat. iv f. , vii Katha1s. xliii , 30 lxxv , 30 342,3 62463
 ** Original Line:
@@ -278,10 +315,14 @@ ganjvar?
 #+end_example
 ** Line:
 92115
-* TODO تير
+* DONE تير
+CLOSED: [2016-07-23 Sat 20:55]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110tIra1tIra n. a kind of arrow cf.~Pers. تير  Pan5cad. ii , 76 449,1 85530
 ** Original Line:
@@ -300,10 +341,14 @@ Persian
 #+end_example
 ** Line:
 94967
-* TODO دربار
+* DONE دربار
+CLOSED: [2016-07-23 Sat 20:55]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110dArvawa1dArvawa n. fr. Pers. دربار   a court or council-house L. cf.~darBawa.  059213 476,2 91800
 ** Original Line:
@@ -332,10 +377,14 @@ Persian
 #+end_example
 ** Line:
 112773
-* TODO نشان
+* DONE نشان
+CLOSED: [2016-07-23 Sat 20:56]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110niHSARa1niH-SARa m. or <lex type="hw">n. march , procession Sa1h. Pers. نشان ? .  069398 544,1 107746
 ** Original Line:
@@ -354,10 +403,13 @@ Persian
 #+end_example
 ** Line:
 133865
-* TODO فيل, پيل
+* DONE فيل, پيل
+CLOSED: [2016-07-23 Sat 20:57]
 ** Guess
 Persian
 ** Decision
+Arabic for فيل
+Persian for پيل
 ** Line w/o XML:
 100pIlu2pIlu <lex type="inh">m. an elephant ~Aribic  فيل  , Persian پيل  L. 630,2 124989
 ** Original Line:
@@ -376,10 +428,14 @@ Persian
 #+end_example
 ** Line:
 138894
-* TODO فيروزه
+* DONE فيروزه
+CLOSED: [2016-07-23 Sat 20:57]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 003peraja1peraja<OR group="128969,peraja;128969.1,peroja"/> or peroja n. a turquoise L. cf.~Pers. فيروزه  . Page648,3  082664 128969
 ** Original Line:
@@ -388,10 +444,14 @@ Persian
 #+end_example
 ** Line:
 141543
-* TODO فيروزه
+* DONE فيروزه
+CLOSED: [2016-07-23 Sat 20:58]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 003peroja1perojaa<OR group="128969,peraja;128969.1,peroja"/> or peraja n. a turquoise L. cf.~Pers. فيروزه  . Page648,3  082664 128969.1
 ** Original Line:
@@ -450,10 +510,13 @@ Persian
 #+end_example
 ** Line:
 155333
-* TODO فانيذ, پانيد
+* DONE فانيذ, پانيد
+CLOSED: [2016-07-23 Sat 20:58]
 ** Guess
 Persian and Arabic
 ** Decision
+Arabic for فانيذ
+Persian for پانيد
 ** Line w/o XML:
 110PARita2PARita m. Ni1lak. <lex type="hw">n. fr. Caus. of~~PaR~;~cf.~Pa1n2. 7-2 , 18 Sch. the inspissated juice of the sugar cane and other plants A1past. MBh. Hariv.  cf. Arab. فانيذ ~~;~~Pers. پانيد ; medieval Lat.~penidium. 090404 718,2 142157
 ** Original Line:
@@ -462,10 +525,14 @@ Persian and Arabic
 #+end_example
 ** Line:
 155838
-* TODO بنده
+* DONE بنده
+CLOSED: [2016-07-23 Sat 20:59]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110bandI2bandI f. cf.~Pers. بنده   a male or female prisoner Ka1lid. Bhat2t2. 720,1 142504
 ** Original Line:
@@ -484,10 +551,14 @@ Persian
 #+end_example
 ** Line:
 158064
-* TODO بالش
+* DONE بالش
+CLOSED: [2016-07-23 Sat 20:59]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110bAliSa1bAliSa2 n. for 1.~~above   = Pers. بالش a pillow , cushion L.  092086 729,3 144752
 ** Original Line:
@@ -496,10 +567,14 @@ Persian
 #+end_example
 ** Line:
 158638
-* TODO بهادر
+* DONE بهادر
+CLOSED: [2016-07-23 Sat 20:59]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110bAhAdura1bAhAdura m. a modern title of honour conferred by Muhammadan kings = Pers. بهادر .  092169 730,1 144903
 ** Original Line:
@@ -528,8 +603,12 @@ Persian
 #+end_example
 ** Line:
 166133
-* مجموع, دار
+* DONE مجموع
+CLOSED: [2016-07-23 Sat 21:03]
 ** Decision
+Arabic
+** Justification
+Transparent Arabic derivation
 ** Line w/o XML:
 110majamudAra1majamudAra m. = مجموع دار  majmU'-dAr , a record-keeper , document-holder Kshiti7s3.  098264 773,2 154345
 ** Original Line:
@@ -538,10 +617,26 @@ Persian
 #+end_example
 ** Line:
 168892
-* TODO من
+* TODO دار
+** Decision
+** Note
+This word is used in Arabic today, but I am not certain that it is of Arabic origin.
+** Line w/o XML:
+110majamudAra1majamudAra m. = مجموع دار  majmU'-dAr , a record-keeper , document-holder Kshiti7s3.  098264 773,2 154345
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>majamudAra</key1><hc1>1</hc1><key2>majamudAra</key2></h><body> <lex>m.</lex> <c>= مجموع دار </c> <s>majmU'-dAr</s> , <c>a_record-keeper_,_document-holder</c> <ls>Kshiti7s3.</ls> </body><tail><mul/> <MW>098264</MW> <pc>773,2</pc> <L>154345</L></tail></H1>
+#+end_example
+** Line:
+168892
+* DONE من
+CLOSED: [2016-07-23 Sat 21:04]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110maRa1maRa m. or <lex type="hw">n. ? fr. Arabic من   a partic. measure of grain Col.  098430 774,3 154590
 ** Original Line:
@@ -550,10 +645,14 @@ Arabic
 #+end_example
 ** Line:
 169143
-* TODO منع
+* DONE منع
+CLOSED: [2016-07-23 Sat 21:04]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 000maRaU1maRaU fr. Arabic منع  , N. of the seventh Yogayoga in astronomy .  098431 774,3 154591
 ** Original Line:
@@ -642,10 +741,14 @@ Arabic
 #+end_example
 ** Line:
 179984
-* TODO مهر
+* DONE مهر
+CLOSED: [2016-07-23 Sat 21:04]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110mihira1mihira m. accord.~to~Un2. i , 52 fr.~1.~mih~,~but prob. the Persian مهر   the sun MBh. Ka1v.  L.~also   a cloud~;~wind~;~the moon~;~a sage  818,2 164596
 ** Original Line:
@@ -754,10 +857,14 @@ Persian
 #+end_example
 ** Line:
 186508
-* TODO رمال
+* DONE رمال
+CLOSED: [2016-07-23 Sat 21:05]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110ramala1ramala m. or <lex type="hw">n. ~Arabic رمال ~rammAl a mode of fortune-telling by means of dice a branch of divination borrowed from the Arabs Cat. 868,2 175217
 ** Original Line:
@@ -766,10 +873,14 @@ Arabic
 #+end_example
 ** Line:
 191392
-* TODO بادام
+* DONE بادام
+CLOSED: [2016-07-23 Sat 21:05]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110vadAma1vadAma m. fr. Persian بادام   an almond L. ~bAdAma.  118353 916,2 185571
 ** Original Line:
@@ -842,10 +953,14 @@ Arabic
 #+end_example
 ** Line:
 235956
-* TODO سهم
+* DONE سهم
+CLOSED: [2016-07-23 Sat 21:06]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110sahama1sahama n. fr. Arabic  سهم   good or evil luck arising from the influence of the stars. 150971 1195,2 240494
 ** Original Line:
@@ -874,10 +989,14 @@ Arabic
 #+end_example
 ** Line:
 273328
-* TODO سِپَرْ
+* DONE سِپَرْ
+CLOSED: [2016-07-23 Sat 21:06]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110sPara2sPara <OR group="256787,sPara;256788,sParaka"/> m. a shield L. accord.~to some fr. Persian سِپَرْ  . 160951 1269,3 256787
 ** Original Line:
@@ -886,10 +1005,14 @@ Persian
 #+end_example
 ** Line:
 278214
-* TODO سِپَرْ
+* DONE سِپَرْ
+CLOSED: [2016-07-23 Sat 21:06]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110sParaka3sParaka<OR group="256787,sPara;256788,sParaka"/> m. a shield L. accord.~to some fr. Persian  سِپَرْ . Page1269,3  160952 256788
 ** Original Line:
@@ -898,10 +1021,14 @@ Persian
 #+end_example
 ** Line:
 278215
-* TODO حكمت
+* DONE حكمت
+CLOSED: [2016-07-23 Sat 21:07]
 ** Guess
 Arabic
 ** Decision
+Arabic
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110hikmatprakASa1hikmat-prakASa m. fr.  حكمت  N. of a med. wk. translated from the Arabic by Maha1-devamahA-deva Pan2d2itapaRqita.  164932 1298,1 262798
 ** Original Line:
@@ -910,10 +1037,14 @@ Arabic
 #+end_example
 ** Line:
 284562
-* TODO هندو
+* DONE هندو
+CLOSED: [2016-07-23 Sat 21:07]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110hindu1hindu m. fr. the Persian  هندو a Hindu more properly Hindu1hindU . 165034 1298,3 262938
 ** Original Line:
@@ -922,10 +1053,14 @@ Persian
 #+end_example
 ** Line:
 284709
-* TODO هندي
+* DONE هندي
+CLOSED: [2016-07-23 Sat 21:07]
 ** Guess
 Persian
 ** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 110huRqikA1huRqikA f. Pers.  هندي  a bill of exchange , bond Ra1jat. 1301,2 263542
 ** Original Line:
