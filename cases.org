@@ -5,6 +5,11 @@
   : </lex> = العابدينا ,
 - I would no expect a space before the period:
   : </lex> = العابدينا,
+** Hindustani
+- The dictionary refers to "Hindustani" (line 154092)
+- The modern term is "Urdu"
+- This distinction parallels "Persian" / "Farsi"
+- I assume we will go with the old labels in both cases ("Hindustani" and "Persian") since this is the term that the dictionary itself uses, but this decision should be verified. Perhaps the new names are more appropriate for language tags.
 * Cases
 ** ارهٿ
 *** Decision
@@ -17,8 +22,12 @@
 #+end_example
 *** Line:
 17762
-** العابدينا
+** DONE العابدينا
+CLOSED: [2016-07-23 Sat 23:29]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic etymology for origin, although exact morphology is not necessarily arabic
 *** Line w/o XML:
 000allApadIna1allApadIna m. = العابدينا , N. of a king, Sa1h. (v.l.).1316,3<L supL="314380">16937.2
 *** Original Line:
@@ -187,8 +196,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 68537
-** خان
+** DONE خان
+CLOSED: [2016-07-23 Sat 23:28]
 *** Decision
+Turkish
+*** Justification
+From Old Turkish
 *** Line w/o XML:
 110KAna1KAna2 m. = خان  a Khan or Mogul emperor Ra1jat. 040919 339,2 61838
 *** Original Line:
@@ -221,9 +234,12 @@ Related to Arabic كنز but must directly from Persian
 #+end_example
 *** Line:
 69478
-** HOLD گنجور
+** DONE گنجور
+CLOSED: [2016-07-23 Sat 23:30]
 *** Decision
-ganjvar?
+Persian
+*** Note
+ganjvar? Influenced by Arabic كنز but with Persian morphology
 *** Line w/o XML:
 110gaYjavara3gaYja--vara m. = گنجور a treasurer Ra1jat. v , 176. 041357 342,3 62474
 *** Original Line:
@@ -288,8 +304,10 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 75415
-** زين
+** TODO زين
 *** Decision
+*** Note
+This word is used in Arabic today, but I am not certain that it is of Arabic origin.
 *** Line w/o XML:
 110jEna2jEna <lex type="inh">m. = زين   N. of a prince of <as0 type="ns">Kas3mirKashmir  425,1 80210
 *** Original Line:
@@ -420,8 +438,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 100852
-** نقل
+** DONE نقل
+CLOSED: [2016-07-23 Sat 23:13]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 003nakta1nakta2<OR group="102809,nakta;102809.1,nakla"/> or nakla ? n. in astron. N. of the fifth Yogayoga = نقل  .  066383 524,1 102809
 *** Original Line:
@@ -430,8 +452,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 112772
-** نقل
+** DONE نقل
+CLOSED: [2016-07-23 Sat 23:13]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 003nakla1nakla2<OR group="102809,nakta;102809.1,nakla"/> or nakta ? n. in astron. N. of the fifth Yogayoga = نقل  .  066383 524,1 102809.1
 *** Original Line:
@@ -456,8 +482,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 118172
-** پادشاه
+** DONE پادشاه
+CLOSED: [2016-07-23 Sat 23:26]
 *** Decision
+Persian
+*** Justification
+شاه from Old Persian
 *** Line w/o XML:
 110pAtasAha1pAtasAha m. = پادشاه , a king Cat.  078101 617,1 121814
 *** Original Line:
@@ -540,8 +570,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 141544
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:26]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 100pradIpasAha3pra-dIpa---sAha m. N. of a prince Cat. sAha~= شاه  680,1 134738
 *** Original Line:
@@ -550,8 +584,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 147813
-** پتهركي
+** DONE پتهركي
+CLOSED: [2016-07-23 Sat 23:35]
 *** Decision
+Hindustani
+*** Justification
+Dictionary gives etymology
 *** Line w/o XML:
 110priyadarSana3priy/a--darSana <lex type="inh">m. a plant growing in wet weather on trees and stones in <as0 type="ns">Mara1t2hi1Marathi called~dagaqaPUla~,~in <as0 type="ns">Hindu1sta1ni1Hindustani پتهركي پهول  L.  710,2 140522
 *** Original Line:
@@ -560,8 +598,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 154092
-** پهول
+** DONE پهول
+CLOSED: [2016-07-23 Sat 23:37]
 *** Decision
+Hindustani
+*** Justification
+Dictionary gives etymology
 *** Line w/o XML:
 110priyadarSana3priy/a--darSana <lex type="inh">m. a plant growing in wet weather on trees and stones in <as0 type="ns">Mara1t2hi1Marathi called~dagaqaPUla~,~in <as0 type="ns">Hindu1sta1ni1Hindustani پتهركي پهول  L.  710,2 140522
 *** Original Line:
@@ -570,8 +612,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 154092
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:26]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 112premasAhi3prema--sAhi sAhi~= شاه  m.  -nArAyaRa Inscr. 089503 711,2 140817
 *** Original Line:
@@ -580,8 +626,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 154403
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:27]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 003PatihaBUpati1Patiha-BUpati<OR group="141699,PatihaBUpati;141699.1,PatihaSAha"/> and PatihaSAha m. N. of a king of Kas3mi1rakaSmIra Cat. = فتح شاه  .  090086 716,2 141699
 *** Original Line:
@@ -590,8 +640,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 155332
-** فتح
+** DONE فتح
+CLOSED: [2016-07-23 Sat 23:39]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 003PatihaSAha1Patiha-SAha<OR group="141699,PatihaBUpati;141699.1,PatihaSAha"/> and PatihaBUpati m. N. of a king of Kas3mi1rakaSmIra Cat. = فتح شاه  .  090086 716,2 141699.1
 *** Original Line:
@@ -644,8 +698,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 156210
-** خان
+** DONE خان
+CLOSED: [2016-07-23 Sat 23:28]
 *** Decision
+Turkish
+*** Justification
+From Old Turkish
 *** Line w/o XML:
 110bahrAmaKAna1bahrAmaKAna m. = بهرام خان  091719 727,2 144224
 *** Original Line:
@@ -696,8 +754,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 158798
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:27]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 110BImaSAha3BIm/a--SAha m. SAha~= شاه   the tterrific king   N. of a king Cat. 096169 758,2 151080
 *** Original Line:
@@ -706,8 +768,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 165462
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:27]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 100BUpAlasAhi3B/U--pAla---sAhi m. s~= شاه   N. of a king Inscr. 761,2 151687
 *** Original Line:
@@ -774,8 +840,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 169144
-** منع
+** DONE منع
+CLOSED: [2016-07-23 Sat 23:14]
 *** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110manaU1manaU m. in astrol.  = منع , a partic. constellation.  100274 787,1 157520
 *** Original Line:
@@ -854,8 +924,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 176894
-** خان
+** DONE خان
+CLOSED: [2016-07-23 Sat 23:28]
 *** Decision
+Turkish
+*** Justification
+From Old Turkish
 *** Line w/o XML:
 110mahmadaKAna1mahmada-KAna m. = محمد خان N. of a man Cat.  102649 804,1 161680
 *** Original Line:
@@ -888,8 +962,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 178366
-** خان
+** DONE خان
+CLOSED: [2016-07-23 Sat 23:28]
 *** Decision
+Turkish
+*** Justification
+From Old Turkish
 *** Line w/o XML:
 110mirAKAna3mirA--KAna m. = خان  N. of a <as0 type="ns">Pat2ha1nPathan chief the patron of Rudra-bhat2t2arudra-Bawwa Cat.  104439 817,3 164461
 *** Original Line:
@@ -898,8 +976,10 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 179866
-** مصر
+** TODO مصر
 *** Decision
+*** Note
+This word is used in Arabic today, but I am not certain that it is of Arabic origin.
 *** Line w/o XML:
 110misara1misara m. or <lex type="hw">n. perhaps = مصر Misrmisr , Egypt?  N. of a place Cat. ~miSara.  104511 818,2 164569
 *** Original Line:
@@ -994,8 +1074,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 181245
-** آباد
+** DONE آباد
+CLOSED: [2016-07-23 Sat 23:43]
 *** Decision
+Persian
+*** Justification
+Ultimately from Persian آب, water
 *** Line w/o XML:
 000murasidAbAda1murasidAbAda = مرشد آباد Murshidabad , N. of a city Kshiti7s3.  105289 823,3 165748
 *** Original Line:
@@ -1120,10 +1204,14 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 213480
-** HOLD پاره
+** DONE پاره
+CLOSED: [2016-07-23 Sat 23:15]
 *** Guess
 Persian
 *** Decision
+Persian
+*** Justification
+Dictionary gives etymology
 *** Line w/o XML:
 100SaNKapAla3SaNK/a--pAla <lex type="inh">m. a kind of sweetmeat fr. Pers. پاره شكر  L. 1047,3 211611
 *** Original Line:
@@ -1132,10 +1220,14 @@ Persian
 #+end_example
 *** Line:
 230036
-** HOLD شكر
+** TODO شكر
 *** Guess
-Arabic
 *** Decision
+Persian
+*** Note
+The dictionary suggests that the two-word phrase comes from Persian, but this word might come from Arabic
+*** Justification
+Dictionary gives etymology
 *** Line w/o XML:
 100SaNKapAla3SaNK/a--pAla <lex type="inh">m. a kind of sweetmeat fr. Pers. پاره شكر  L. 1047,3 211611
 *** Original Line:
@@ -1144,8 +1236,12 @@ Arabic
 #+end_example
 *** Line:
 230036
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:24]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 110SAha1SAha m. =  شاه ~nema-~,~Patiha-~,~BUmi-S 1069,3 216473
 *** Original Line:
@@ -1168,8 +1264,25 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 235145
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:25]
 *** Decision
+Persian
+*** Justification
+From Old Perisan
+*** Line w/o XML:
+000SAhnAma1SAhnAma =  شاه نامه  , Cat.  136163 1069,3 216480
+*** Original Line:
+#+begin_example xml
+<H1><h><hc3>000</hc3><key1>SAhnAma</key1><hc1>1</hc1><key2>SAhnAma</key2></h><body> <c>=_ شاه نامه </c> , <ls>Cat.</ls> </body><tail><mul/> <MW>136163</MW> <pc>1069,3</pc> <L>216480</L></tail></H1>
+#+end_example
+*** Line:
+235146
+** DONE نامه
+CLOSED: [2016-07-23 Sat 23:24]
+*** Decision
+Persian
+*** Justification
 نامه - book / writing
 *** Line w/o XML:
 000SAhnAma1SAhnAma =  شاه نامه  , Cat.  136163 1069,3 216480
@@ -1179,19 +1292,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 235146
-** نامه
+** DONE سليمان
+CLOSED: [2016-07-23 Sat 23:40]
 *** Decision
-نامه - book / writing
-*** Line w/o XML:
-000SAhnAma1SAhnAma =  شاه نامه  , Cat.  136163 1069,3 216480
-*** Original Line:
-#+begin_example xml
-<H1><h><hc3>000</hc3><key1>SAhnAma</key1><hc1>1</hc1><key2>SAhnAma</key2></h><body> <c>=_ شاه نامه </c> , <ls>Cat.</ls> </body><tail><mul/> <MW>136163</MW> <pc>1069,3</pc> <L>216480</L></tail></H1>
-#+end_example
-*** Line:
-235146
-** سليمان
-*** Decision
+Arabic
+*** Justification
+Transparent Arabic derivation
 *** Line w/o XML:
 110SilamAnaKAna1SilamAna-KAna m. =  سليمان خان  Cat.  136651 1073,1 217271
 *** Original Line:
@@ -1200,8 +1306,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 235956
-** خان
+** DONE خان
+CLOSED: [2016-07-23 Sat 23:28]
 *** Decision
+Turkish
+*** Justification
+From Old Turkish
 *** Line w/o XML:
 110SilamAnaKAna1SilamAna-KAna m. =  سليمان خان  Cat.  136651 1073,1 217271
 *** Original Line:
@@ -1226,8 +1336,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 260972
-** شاه
+** DONE شاه
+CLOSED: [2016-07-23 Sat 23:26]
 *** Decision
+Persian
+*** Justification
+From Old Persian
 *** Line w/o XML:
 110sAha1sAha2 m. = شاه   ~pradIpa-~and~maDukara-s.  153056 1212,1 243585
 *** Original Line:
@@ -1326,8 +1440,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 285390
-** حيدرشاۀ
+** DONE حيدرشاۀ
+CLOSED: [2016-07-23 Sat 23:42]
 *** Decision
+Persian
+*** Justification
+حيدر may have a different etymology, but preference given to شاه, which is definitely Persian
 *** Line w/o XML:
 110hEdaraSAha1hEdaraSAha m. =  حيدرشاۀ Cat.  166068 1305,3 264434
 *** Original Line:
