@@ -11,9 +11,12 @@
 - This distinction parallels "Persian" / "Farsi"
 - I assume we will go with the old labels in both cases ("Hindustani" and "Persian") since this is the term that the dictionary itself uses, but this decision should be verified. Perhaps the new names are more appropriate for language tags.
 * Cases
-** ارهٿ
+** DONE ارهٿ
+CLOSED: [2016-07-23 Sat 23:46]
 *** Decision
-- sindi?
+Hindustani
+*** Justification
+The dictionary seems to give an etymology "Hind.", though this also might be Sindhi
 *** Line w/o XML:
 110araGawwa3ara--Gawwa m. a wheel or machine for raising water from a well Hind.  ارهٿ Pan5cat. 86,2 15014
 *** Original Line:
@@ -304,10 +307,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 75415
-** TODO زين
+** DONE زين
+CLOSED: [2016-07-23 Sat 23:46]
 *** Decision
+Arabic
 *** Note
-This word is used in Arabic today, but I am not certain that it is of Arabic origin.
+This word is used in Arabic today, and has a likely derivation, but I am not fully certain that it is of Arabic origin.
 *** Line w/o XML:
 110jEna2jEna <lex type="inh">m. = زين   N. of a prince of <as0 type="ns">Kas3mirKashmir  425,1 80210
 *** Original Line:
@@ -330,8 +335,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 91398
-** تربز
+** DONE تربز
+CLOSED: [2016-07-23 Sat 23:49]
 *** Decision
+Persian
+*** Justification
+Persian sense seems to be borrowed to Turkish, but this is hard to verify: [[https://en.wiktionary.org/wiki/%25D8%25AA%25D8%25B1%25D8%25A8%25D8%25B2][Wiktionary]]
 *** Line w/o XML:
 110tarambuja1tarambuja n. borrowed fr. تربز   a water-melon ~KarbUja , Tantr.  053922 439,2 83213
 *** Original Line:
@@ -796,10 +805,12 @@ Transparent Arabic derivation
 #+end_example
 *** Line:
 168892
-** TODO دار
+** DONE دار
+CLOSED: [2016-07-23 Sat 23:55]
 *** Decision
+Persian
 *** Note
-This word is used in Arabic today, but I am not certain that it is of Arabic origin.
+There are multiple possibilities. دار is a common Persian suffix, as in سردار or حسابدار. I find this most convincing. It could also come from Arabic دار, house.
 *** Line w/o XML:
 110majamudAra1majamudAra m. = مجموع دار  majmU'-dAr , a record-keeper , document-holder Kshiti7s3.  098264 773,2 154345
 *** Original Line:
@@ -976,10 +987,12 @@ From Old Turkish
 #+end_example
 *** Line:
 179866
-** TODO مصر
+** DONE مصر
+CLOSED: [2016-07-23 Sat 23:51]
 *** Decision
+Arabic
 *** Note
-This word is used in Arabic today, but I am not certain that it is of Arabic origin.
+The origin is really Semitic, but of the Choices between Arabic, Farsi, and Turkish, Arabic is the preferred, given that it is the only Semitic representative.
 *** Line w/o XML:
 110misara1misara m. or <lex type="hw">n. perhaps = مصر Misrmisr , Egypt?  N. of a place Cat. ~miSara.  104511 818,2 164569
 *** Original Line:
@@ -1220,12 +1233,12 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 230036
-** TODO شكر
-*** Guess
+** DONE شكر
+CLOSED: [2016-07-24 Sun 00:01]
 *** Decision
 Persian
 *** Note
-The dictionary suggests that the two-word phrase comes from Persian, but this word might come from Arabic
+More likely Persian شِكِر, sugar, than Arabic شُكر, gratitude.
 *** Justification
 Dictionary gives etymology
 *** Line w/o XML:
@@ -1350,8 +1363,12 @@ From Old Persian
 #+end_example
 *** Line:
 264264
-** اسكندر
+** DONE اسكندر
+CLOSED: [2016-07-24 Sun 00:04]
 *** Decision
+Arabic
+*** Justification
+Ultimately from Greek, but given that this is the dominant pronunciation in Arabic, I've chosen Arabic here.
 *** Line w/o XML:
 110sekanDara1sekanDara m. =  اسكندر , Iskandar Alexander Cat. 157825 1246,1 252079
 *** Original Line:
