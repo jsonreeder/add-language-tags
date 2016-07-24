@@ -1,4 +1,10 @@
 #+TITLE: Cases of Arabic Text in MW
+* General Notes
+** Spaces with Arabic
+- I notice that the Arabic is always surrounded by a space on either side:
+  : </lex> = العابدينا ,
+- I would no expect a space before the period:
+  : </lex> = العابدينا,
 * ارهٿ
 ** Decision
 - sindi?
@@ -225,7 +231,7 @@ ganjvar?
 #+end_example
 ** Line:
 69488
-* غير, قَبول
+* غير
 ** Decision
 ** Line w/o XML:
 003gErakaMvUla1gEra-kaMvUla or ri-k fr.  غير and قَبول  , the 9th Yogayoga in astron.  044078 363,3 66883
@@ -235,7 +241,27 @@ ganjvar?
 #+end_example
 ** Line:
 74136
-* غلام, محمود
+* قَبول
+** Decision
+** Line w/o XML:
+003gErakaMvUla1gEra-kaMvUla or ri-k fr.  غير and قَبول  , the 9th Yogayoga in astron.  044078 363,3 66883
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>003</hc3><key1>gErakaMvUla</key1><hc1>1</hc1><key2>gEra-kaMvUla</key2></h><body> <c>or</c> <s><sr1/>ri-k<sr1/></s> <p>fr.  غير and قَبول </p>_,_the_9th_<as0>Yoga</as0><as1><s>yoga</s></as1>_<p>in_<ab>astron.</ab></p> </body><tail><mul/> <MW>044078</MW> <pc>363,3</pc> <L>66883</L></tail></H1>
+#+end_example
+** Line:
+74136
+* غلام
+** Decision
+** Line w/o XML:
+000golAmamAmuda1golAma-mAmuda  غلام محمود .  044642 368,3 68039
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>000</hc3><key1>golAmamAmuda</key1><hc1>1</hc1><key2>golAma-mAmuda</key2></h><body> <c> غلام محمود .</c> </body><tail><mul/> <MW>044642</MW> <pc>368,3</pc> <L>68039</L></tail></H1>
+#+end_example
+** Line:
+75415
+* محمود
 ** Decision
 ** Line w/o XML:
 000golAmamAmuda1golAma-mAmuda  غلام محمود .  044642 368,3 68039
@@ -403,13 +429,30 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 133865
-* DONE فيل, پيل
-CLOSED: [2016-07-23 Sat 20:57]
+* DONE فيل
+CLOSED: [2016-07-23 Sat 21:13]
 ** Guess
 Persian
 ** Decision
-Arabic for فيل
-Persian for پيل
+Arabic
+** Justification
+Dictionary gives etymology
+** Line w/o XML:
+100pIlu2pIlu <lex type="inh">m. an elephant ~Aribic  فيل  , Persian پيل  L. 630,2 124989
+** Original Line:
+#+begin_example xml
+<H2A><h><hc3>100</hc3><key1>pIlu</key1><hc1>2</hc1><key2>pIlu</key2></h><body> <lex type="inh">m.</lex> <c>an_elephant</c> <p><cf/>~<c>Aribic_ فيل_ , Persian پيل </c></p> <ls>L.</ls> </body><tail><pc>630,2</pc> <L>124989</L></tail></H2A>
+#+end_example
+** Line:
+137219
+* DONE پيل
+CLOSED: [2016-07-23 Sat 21:14]
+** Guess
+Persian
+** Decision
+Persian
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 100pIlu2pIlu <lex type="inh">m. an elephant ~Aribic  فيل  , Persian پيل  L. 630,2 124989
 ** Original Line:
@@ -470,7 +513,17 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 147813
-* پتهركي, پهول
+* پتهركي
+** Decision
+** Line w/o XML:
+110priyadarSana3priy/a--darSana <lex type="inh">m. a plant growing in wet weather on trees and stones in <as0 type="ns">Mara1t2hi1Marathi called~dagaqaPUla~,~in <as0 type="ns">Hindu1sta1ni1Hindustani پتهركي پهول  L.  710,2 140522
+** Original Line:
+#+begin_example xml
+<H3B><h><hc3>110</hc3><key1>priyadarSana</key1><hc1>3</hc1><key2>priy/a--darSana</key2></h><body> <lex type="inh">m.</lex> <c>a_plant_growing_in_wet_weather_on_trees_and_stones_<p><c1>in_<as0 type="ns">Mara1t2hi1</as0><as1>Marathi</as1>_called</c1>~<s>dagaqaPUla</s>~,~<c1>in_<as0 type="ns">Hindu1sta1ni1</as0><as1>Hindustani</as1> پتهركي پهول </c1></p></c> <ls>L.</ls> </body><tail><mat/> <pc>710,2</pc> <L>140522</L></tail></H3B>
+#+end_example
+** Line:
+154092
+* پهول
 ** Decision
 ** Line w/o XML:
 110priyadarSana3priy/a--darSana <lex type="inh">m. a plant growing in wet weather on trees and stones in <as0 type="ns">Mara1t2hi1Marathi called~dagaqaPUla~,~in <as0 type="ns">Hindu1sta1ni1Hindustani پتهركي پهول  L.  710,2 140522
@@ -490,7 +543,7 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 154403
-* فتح, شاه
+* شاه
 ** Decision
 ** Line w/o XML:
 003PatihaBUpati1Patiha-BUpati<OR group="141699,PatihaBUpati;141699.1,PatihaSAha"/> and PatihaSAha m. N. of a king of Kas3mi1rakaSmIra Cat. = فتح شاه  .  090086 716,2 141699
@@ -500,7 +553,7 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 155332
-* فتح, شاه
+* فتح
 ** Decision
 ** Line w/o XML:
 003PatihaSAha1Patiha-SAha<OR group="141699,PatihaBUpati;141699.1,PatihaSAha"/> and PatihaBUpati m. N. of a king of Kas3mi1rakaSmIra Cat. = فتح شاه  .  090086 716,2 141699.1
@@ -510,13 +563,26 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 155333
-* DONE فانيذ, پانيد
-CLOSED: [2016-07-23 Sat 20:58]
+* DONE فانيذ
+CLOSED: [2016-07-23 Sat 21:19]
 ** Guess
 Persian and Arabic
 ** Decision
-Arabic for فانيذ
-Persian for پانيد
+Arabic
+** Line w/o XML:
+110PARita2PARita m. Ni1lak. <lex type="hw">n. fr. Caus. of~~PaR~;~cf.~Pa1n2. 7-2 , 18 Sch. the inspissated juice of the sugar cane and other plants A1past. MBh. Hariv.  cf. Arab. فانيذ ~~;~~Pers. پانيد ; medieval Lat.~penidium. 090404 718,2 142157
+** Original Line:
+#+begin_example xml
+<H2><h><hc3>110</hc3><key1>PARita</key1><hc1>2</hc1><key2>PARita</key2></h><body> <lex>m.</lex> <p><ls>Ni1lak.</ls></p> <lex type="hw">n.</lex> <p><c>fr._<ab>Caus.</ab>_of</c>~<root/>~<s>PaR</s>~;~<ab>cf.</ab>~<ls>Pa1n2._7-2_,_18_<ab>Sch.</ab></ls></p> <c>the_inspissated_juice_of_the_sugar_cane_and_other_plants</c> <ls>A1past.</ls> <ls>MBh.</ls> <ls>Hariv._</ls> <b><c><ab>cf.</ab>_<ab>Arab.</ab> فانيذ </c>~~;~~<c><ab>Pers.</ab> پانيد ;_medieval_<ab>Lat.</ab></c>~<etym>penidium</etym>.</b> </body><tail><MW>090404</MW> <pc>718,2</pc> <L>142157</L></tail></H2>
+#+end_example
+** Line:
+155838
+* DONE پانيد
+CLOSED: [2016-07-23 Sat 21:19]
+** Guess
+Persian and Arabic
+** Decision
+Persian
 ** Line w/o XML:
 110PARita2PARita m. Ni1lak. <lex type="hw">n. fr. Caus. of~~PaR~;~cf.~Pa1n2. 7-2 , 18 Sch. the inspissated juice of the sugar cane and other plants A1past. MBh. Hariv.  cf. Arab. فانيذ ~~;~~Pers. پانيد ; medieval Lat.~penidium. 090404 718,2 142157
 ** Original Line:
@@ -681,7 +747,17 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 173691
-* محمد, عادِل
+* محمد
+** Decision
+** Line w/o XML:
+110mahamadaedala1mahamada-edala m. = محمد عادِل N. of a prince Cat.  102607 803,3 161628
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>mahamadaedala</key1><hc1>1</hc1><key2>mahamada-edala</key2></h><body> <lex>m.</lex> <c>= محمد عادِل N._of_a_prince</c> <ls>Cat.</ls> </body><tail><mul/> <MW>102607</MW> <pc>803,3</pc> <L>161628</L></tail></H1>
+#+end_example
+** Line:
+176840
+* عادِل
 ** Decision
 ** Line w/o XML:
 110mahamadaedala1mahamada-edala m. = محمد عادِل N. of a prince Cat.  102607 803,3 161628
@@ -701,7 +777,7 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 176841
-* محمد, خان
+* محمد
 ** Decision
 ** Line w/o XML:
 110mahmadaKAna1mahmada-KAna m. = محمد خان N. of a man Cat.  102649 804,1 161680
@@ -711,7 +787,27 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 176894
-* محمود, غزنوى
+* خان
+** Decision
+** Line w/o XML:
+110mahmadaKAna1mahmada-KAna m. = محمد خان N. of a man Cat.  102649 804,1 161680
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>mahmadaKAna</key1><hc1>1</hc1><key2>mahmada-KAna</key2></h><body> <lex>m.</lex> <c>= محمد خان N._of_a_man</c> <ls>Cat.</ls> </body><tail><mul/> <MW>102649</MW> <pc>804,1</pc> <L>161680</L></tail></H1>
+#+end_example
+** Line:
+176894
+* محمود
+** Decision
+** Line w/o XML:
+110mAmudagajanavI1mAmuda-gajanavI m. = محمود غزنوى <as0 type="ns">Mahmu1dMahmud of <as0 type="ns">Ghazni1Ghazni Kshiti7s3.  103554 811,1 163075
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>mAmudagajanavI</key1><hc1>1</hc1><key2>mAmuda-gajanavI</key2></h><body> <lex>m.</lex> <c>= محمود غزنوى <as0 type="ns">Mahmu1d</as0><as1>Mahmud</as1>_of_<as0 type="ns">Ghazni1</as0><as1>Ghazni</as1></c> <ls>Kshiti7s3.</ls> </body><tail><mul/> <MW>103554</MW> <pc>811,1</pc> <L>163075</L></tail></H1>
+#+end_example
+** Line:
+178366
+* غزنوى
 ** Decision
 ** Line w/o XML:
 110mAmudagajanavI1mAmuda-gajanavI m. = محمود غزنوى <as0 type="ns">Mahmu1dMahmud of <as0 type="ns">Ghazni1Ghazni Kshiti7s3.  103554 811,1 163075
@@ -797,7 +893,17 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 181180
-* مرشد, آباد
+* مرشد
+** Decision
+** Line w/o XML:
+000murasidAbAda1murasidAbAda = مرشد آباد Murshidabad , N. of a city Kshiti7s3.  105289 823,3 165748
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>000</hc3><key1>murasidAbAda</key1><hc1>1</hc1><key2>murasidAbAda</key2></h><body> <c>= مرشد آباد Murshidabad_,_N._of_a_city</c> <ls>Kshiti7s3.</ls> </body><tail><mul/> <MW>105289</MW> <pc>823,3</pc> <L>165748</L></tail></H1>
+#+end_example
+** Line:
+181245
+* آباد
 ** Decision
 ** Line w/o XML:
 000murasidAbAda1murasidAbAda = مرشد آباد Murshidabad , N. of a city Kshiti7s3.  105289 823,3 165748
@@ -899,9 +1005,20 @@ Dictionary gives etymology
 #+end_example
 ** Line:
 213480
-* HOLD پاره, شكر
+* HOLD پاره
 ** Guess
 Persian
+** Decision
+** Line w/o XML:
+100SaNKapAla3SaNK/a--pAla <lex type="inh">m. a kind of sweetmeat fr. Pers. پاره شكر  L. 1047,3 211611
+** Original Line:
+#+begin_example xml
+<H3A><h><hc3>100</hc3><key1>SaNKapAla</key1><hc1>3</hc1><key2>SaNK/a--pAla</key2></h><body> <lex type="inh">m.</lex> <c>a_kind_of_sweetmeat_<p>fr._<ab>Pers.</ab> پاره شكر </p></c> <ls>L.</ls> </body><tail><pc>1047,3</pc> <L>211611</L></tail></H3A>
+#+end_example
+** Line:
+230036
+* HOLD شكر
+** Guess
 Arabic
 ** Decision
 ** Line w/o XML:
@@ -932,7 +1049,7 @@ Arabic
 #+end_example
 ** Line:
 235145
-* شاه, نامه
+* شاه
 ** Decision
 نامه - book / writing
 ** Line w/o XML:
@@ -943,7 +1060,28 @@ Arabic
 #+end_example
 ** Line:
 235146
-* سليمان, خان
+* نامه
+** Decision
+نامه - book / writing
+** Line w/o XML:
+000SAhnAma1SAhnAma =  شاه نامه  , Cat.  136163 1069,3 216480
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>000</hc3><key1>SAhnAma</key1><hc1>1</hc1><key2>SAhnAma</key2></h><body> <c>=_ شاه نامه </c> , <ls>Cat.</ls> </body><tail><mul/> <MW>136163</MW> <pc>1069,3</pc> <L>216480</L></tail></H1>
+#+end_example
+** Line:
+235146
+* سليمان
+** Decision
+** Line w/o XML:
+110SilamAnaKAna1SilamAna-KAna m. =  سليمان خان  Cat.  136651 1073,1 217271
+** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>SilamAnaKAna</key1><hc1>1</hc1><key2>SilamAna-KAna</key2></h><body> <lex>m.</lex> <c>=_ سليمان خان </c> <ls>Cat.</ls> </body><tail><mul/> <MW>136651</MW> <pc>1073,1</pc> <L>217271</L></tail></H1>
+#+end_example
+** Line:
+235956
+* خان
 ** Decision
 ** Line w/o XML:
 110SilamAnaKAna1SilamAna-KAna m. =  سليمان خان  Cat.  136651 1073,1 217271
