@@ -1,6 +1,6 @@
 #+TITLE: Cases of Arabic Text in MW
 * General Notes
-*** Spaces with Arabic
+** Spaces with Arabic
 - I notice that the Arabic is always surrounded by a space on either side:
   : </lex> = العابدينا ,
 - I would no expect a space before the period:
@@ -632,7 +632,17 @@ Dictionary gives etymology
 #+end_example
 *** Line:
 156210
-** بهرام, خان
+** خان
+*** Decision
+*** Line w/o XML:
+110bahrAmaKAna1bahrAmaKAna m. = بهرام خان  091719 727,2 144224
+*** Original Line:
+#+begin_example xml
+<H1><h><hc3>110</hc3><key1>bahrAmaKAna</key1><hc1>1</hc1><key2>bahrAmaKAna</key2></h><body> <lex>m.</lex> <c>= بهرام خان</c> </body><tail><mul/> <MW>091719</MW> <pc>727,2</pc> <L>144224</L></tail></H1>
+#+end_example
+*** Line:
+158064
+** بهرام
 *** Decision
 *** Line w/o XML:
 110bahrAmaKAna1bahrAmaKAna m. = بهرام خان  091719 727,2 144224
