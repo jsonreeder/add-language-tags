@@ -3,7 +3,7 @@
 * ارهٿ
 
 ** Decision
-
+- sindi?
 
 ** Line w/o XML:
 110araGawwa3ara--Gawwa m. a wheel or machine for raising water from a well Hind.  ارهٿ Pan5cat. 86,2 15014
@@ -32,14 +32,17 @@
 ** Line:
 20012
 
-* TODO شاه
+* DONE شاه
+CLOSED: [2016-07-23 Sat 20:39]
 
 ** Guess
 Persian
 
 ** Decision
+Persian
 
-
+** Justification
+Dictionary gives etymology
 ** Line w/o XML:
 000avaraNgasAha1avaraNga-sAha = Aurungzeb a Muhammedan king of the 17th century~;~sAha~= the Persian شاه.  013086 102,3 17894
 
@@ -51,10 +54,14 @@ Persian
 ** Line:
 21043
 
-* إِقْبال
+* DONE إِقْبال
+CLOSED: [2016-07-23 Sat 20:40]
 
 ** Decision
+Arabic
 
+** Justification
+Transparent Arabic derivation
 
 ** Line w/o XML:
 000ikkavAla1ikkavAla in astrology = إِقْبال , good fortune , prosperity.  020138 163,3 28563
@@ -251,10 +258,11 @@ Persian
 ** Line:
 69473
 
-* گنج
+* HOLD گنج
 
 ** Decision
 
+Related to كنز
 
 ** Line w/o XML:
 110gaYja1gaYja2  mn. = گنج a treasury , jewel room , place where plate  is preserved Ra1jat. iv f. , vii Katha1s. xliii , 30 lxxv , 30 342,3 62463
@@ -267,11 +275,11 @@ Persian
 ** Line:
 69478
 
-* گنجور
+* HOLD گنجور
 
 ** Decision
 
-
+ganjvar?
 ** Line w/o XML:
 110gaYjavara3gaYja--vara m. = گنجور a treasurer Ra1jat. v , 176. 041357 342,3 62474
 
@@ -1240,10 +1248,11 @@ Persian
 ** Line:
 213480
 
-* TODO پاره, شكر
+* HOLD پاره, شكر
 
 ** Guess
 Persian
+Arabic
 
 ** Decision
 
@@ -1294,7 +1303,7 @@ Persian
 * شاه, نامه
 
 ** Decision
-
+نامه - book / writing
 
 ** Line w/o XML:
 000SAhnAma1SAhnAma =  شاه نامه  , Cat.  136163 1069,3 216480
