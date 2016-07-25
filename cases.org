@@ -10,6 +10,12 @@
 - The modern term is "Urdu"
 - This distinction parallels "Persian" / "Farsi"
 - I assume we will go with the old labels in both cases ("Hindustani" and "Persian") since this is the term that the dictionary itself uses, but this decision should be verified. Perhaps the new names are more appropriate for language tags.
+** Typo
+- There appears to be a typo in the transcription
+- Line 137219 has "Aribic" instead of "Arabic"
+  #+begin_example xml
+  <H2A><h><hc3>100</hc3><key1>pIlu</key1><hc1>2</hc1><key2>pIlu</key2></h><body> <lex type="inh">m.</lex> <c>an_elephant</c> <p><cf/>~<c>Aribic_ فيل_ , Persian پيل </c></p> <ls>L.</ls> </body><tail><pc>630,2</pc> <L>124989</L></tail></H2A>
+  #+end_example
 * Cases
 ** DONE ارهٿ
 CLOSED: [2016-07-23 Sat 23:46]
