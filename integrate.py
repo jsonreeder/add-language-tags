@@ -1,5 +1,6 @@
 from pprint import pprint
 
+# Helper functions
 def parse_decision(lines):
     """Returns a list of the information neede to add lang tags:
        the word, it's language tag, and the line"""
@@ -34,36 +35,53 @@ def add_tag(word, language, text):
 
     return before + word + after
 
-# Parse decisions
-with open("cases.org", "r") as f:
-    lines = f.read().splitlines()
-    lines_cases = lines[19:]
-decisions = parse_decision(lines_cases)
+def parse_decisions_doc():
+    """Run function parse_decisions() on input file"""
 
-# Make sure that all tags are acceptable
-acceptable_tags = ['Hindustani', 'Turkish', 'Arabic', 'Persian']
-unique_tags = set([d[1] for d in decisions])
-for u in unique_tags:
-    if u not in acceptable_tags:
-        print("Warning: the tag %s is unacceptable." % (u))
+    with open("cases.org", "r") as f:
+        lines = f.read().splitlines()
+        lines_cases = lines[19:]
+    decisions = parse_decision(lines_cases)
 
-# Add tags to a new copy of the dictionary
-# lines_to_change = [int(d[2]) for d in decisions]
-# with open("monier.xml", "r") as f:
-#     lines = f.read().splitlines()
-#     with open("monier_with_lang_tags.xml", "w") as w:
-#         for i, line in enumerate(lines):
-#             if i in lines_to_change:
-#                 w.write(add_tag(d[0], d[1], lines[int(d[2])]) + "\n")
-#             else:
-#                 w.write(line + "\n")
+def test_tags():
+    """Make sure that all tags are acceptable"""
 
-# Add tags to a special "changes" file
-changes = []
-with open("monier.xml", "r") as f:
-    lines = f.read().splitlines()
-    for d in decisions:
-        changes.append(add_tag(d[0], d[1], lines[int(d[2])]))
+    acceptable_tags = ['Hindustani', 'Turkish', 'Arabic', 'Persian']
+    unique_tags = set([d[1] for d in decisions])
+    for u in unique_tags:
+        if u not in acceptable_tags:
+            print("Warning: the tag %s is unacceptable." % (u))
 
-with open("changes.xml", "w") as f:
-    f.write("\n".join(changes))
+def create_complete_dictionary_file():
+    """Add tags to a new copy of the dictionary
+       This is very large and isn't a good way of testing"""
+
+    lines_to_change = [int(d[2]) for d in decisions]
+    with open("monier.xml", "r") as f:
+        lines = f.read().splitlines()
+        with open("monier_with_lang_tags.xml", "w") as w:
+            for i, line in enumerate(lines):
+                if i in lines_to_change:
+                    w.write(add_tag(d[0], d[1], lines[int(d[2])]) + "\n")
+                else:
+                    w.write(line + "\n")
+
+def create_changes_file():
+    """Add tags to a special "changes" file"""
+
+    changes = []
+    with open("monier.xml", "r") as f:
+        lines = f.read().splitlines()
+        for d in decisions:
+            changes.append(add_tag(d[0], d[1], lines[int(d[2])]))
+
+    with open("changes.xml", "w") as f:
+        f.write("\n".join(changes))
+
+def run():
+    parse_decisions_doc()
+    test_tags()
+    # create_complete_dictionary_file()
+    create_changes_file()
+
+run()
