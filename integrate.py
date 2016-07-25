@@ -75,7 +75,7 @@ def create_output_file():
             f.write(str(k) + "\n")
             f.write("".join(v) + "\n\n")
 
-def run()
+def run():
     parse_decisions_doc()
     test_tags()
     create_output_file()
