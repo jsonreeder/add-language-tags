@@ -1,0 +1,10 @@
+#+TITLE: Add Language Tags for Monier Williams
+
+This repository documents my effort adding language tags to the words in Arabic script occurring in the Monier Williams dictionary for the Sanskrit library project.
+
+Index of files:
+- [[file:monier_lines_with_tags.xml][~monier_lines_with_tags.xml~]]: The final output of the process including the line numbers in which the lines originally occur in ~monier.xml~ and the updated line with language tags
+- [[file:cases.org][~cases.org~]]: Notes on why each etymology was chosen
+- [[file:extract_arabic.py][~extract_arabic.py~]]: Extracted the lines with Arabic text
+- [[file:integrate.py][~integrate.py~]]: Generated ~monier_lines_with_tags.xml~
+- [[file:monier.xml][~monier.xml~]]: The original dictionary file
