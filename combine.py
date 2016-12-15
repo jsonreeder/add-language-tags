@@ -20,15 +20,15 @@ def check_line_arabic(line):
     return bool(search("[\u0600-ۿ]", line))
 
 
-def check_multi_line_match(ori_lines, mod_lines):
-    """Check to make sure that all lines match up"""
+def check_multi_line_arabic(lines):
+    """Check to make sure that all lines contain Arabic"""
+    # TODO: Check all before stopping
 
-    for line_no, content in mod_lines.items():
-        try:
-            matching_ori_line = ori_lines[line_no]
-            check_line_match(matching_ori_line, content) is true
-        except:
-            print("ERROR: Original lines and modified lines do not match")
+    for line_no, content in lines.items():
+        if check_line_arabic(content) is False:
+            print(
+                "ERROR: Line does not contain Arabic, it should not be replaced:\n{}: {}".format(
+                    line_no, content))
             return False
 
     return True
@@ -98,44 +98,30 @@ def test_check_line_arabic_pass():
     assert check_line_arabic(line)
 
 
-# def test_check_multi_line_match_fail():
-#     """Make sure that different lines do not match up, in multiples"""
+def test_check_multi_line_arabic_fail():
+    """Make sure that different lines do not match up, in multiples"""
 
-#     ori_lines = defaultdict(list, {
-#         17762:
-#         '<H3A><h><hc3>100</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex type="inh">m.</lex> <c>a_well</c> <ls>Ra1jat.</ls> </body><tail><MW>011040</MW> <pc>86,2</pc> <L>15015</L></tail></H3A>\n',
-#         20012:
-#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
-#     })
+    lines = defaultdict(list, {
+        17762:
+        '<H3A><h><hc3>100</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex type="inh">m.</lex> <c>a_well</c> <ls>Ra1jat.</ls> </body><tail><MW>011040</MW> <pc>86,2</pc> <L>15015</L></tail></H3A>\n',
+        20012:
+        '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
+    })
 
-#     mod_lines = defaultdict(list, {
-#         17762:
-#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>',
-#         20012:
-#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic">العابدينا</lang> , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>'
-#     })
-
-#     assert check_line_match(ori_lines, mod_lines)
+    assert check_multi_line_arabic(lines) is False
 
 
-# def test_check_multi_line_match_success():
-#     """Make sure that different lines do not match up, in multiples"""
+def test_check_multi_line_match_success():
+    """Make sure that different lines do not match up, in multiples"""
 
-#     ori_lines = defaultdict(list, {
-#         17762:
-#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ ارهٿ</p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>\n',
-#         20012:
-#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
-#     })
+    lines = defaultdict(list, {
+        17762:
+        '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ ارهٿ</p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>\n',
+        20012:
+        '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
+    })
 
-#     mod_lines = defaultdict(list, {
-#         17762:
-#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>',
-#         20012:
-#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic">العابدينا</lang> , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>'
-#     })
-
-#     assert check_line_match(ori_lines, mod_lines)
+    assert check_multi_line_arabic(lines)
 
 
 def test_parse_mod_line():
