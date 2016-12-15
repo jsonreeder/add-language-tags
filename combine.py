@@ -3,6 +3,7 @@
 Integrates the modified lines (now containing etymologies) into the original
 dictionary.
 """
+from collections import defaultdict
 
 
 # Helper functions
@@ -31,12 +32,19 @@ def parse_mod_line(i_string):
 def parse_all_mod_lines(i_file):
     """Parse the file containing modified lines"""
 
+    parsed_lines = defaultdict(list)
+
     with open(i_file, "r") as f:
         text = f.read()
 
     mod_lines = text.split("\n\n")
 
-    return [parse_mod_line(line) for line in mod_lines]
+    for line in mod_lines:
+        parsed_line = parse_mod_line(line)
+        lno, content = parsed_line
+        parsed_lines[lno] = content
+
+    return parsed_lines
 
 
 def get_line_nos_to_modify(parsed_lines):
@@ -48,12 +56,12 @@ def get_line_nos_to_modify(parsed_lines):
 def get_lines_to_modify(i_file, line_nos):
     """Get the lines to be modified from the original file"""
 
-    lines = []
+    lines = defaultdict(list)
 
     for lno in line_nos:
         with open(i_file, "r") as f:
             line = f.readlines()[lno]
-            lines.append((lno, line))
+            lines[lno] = line
 
     return lines
 
@@ -107,15 +115,15 @@ def test_get_line_nos():
     assert get_line_nos_to_modify(parsed) == expected
 
 
-def test_get_lines_single():
+def test_get_lines_ingle():
     """Make sure that single lines to be modified are extracted correctly"""
 
     lines = get_lines_to_modify("monier.xml", [10])
 
-    expected = [(
-        10,
+    expected = defaultdict(list, {
+        10:
         '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n'
-    )]
+    })
     assert lines == expected
 
 
@@ -124,15 +132,14 @@ def test_get_lines_multiple():
 
     lines = get_lines_to_modify("monier.xml", [10, 11, 12])
 
-    expected = [(
-        10,
-        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n'
-    ), (
-        11,
-        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>occasionally_denoting_comparison</c> <p><s>a-brAhmaRa</s>~<c>like_a_<as0>Brahman</as0><as1><s>brahman</s></as1></c>~<ls>T.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.2</L></tail></H1A>\n'
-    ), (12,
+    expected = defaultdict(list, {
+        10:
+        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n',
+        11:
+        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>occasionally_denoting_comparison</c> <p><s>a-brAhmaRa</s>~<c>like_a_<as0>Brahman</as0><as1><s>brahman</s></as1></c>~<ls>T.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.2</L></tail></H1A>\n',
+        12:
         '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>sometimes_disparagement</c> <p><s>a-yajYa</s>~<c>a_miserable_sacrifice</c></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.3</L></tail></H1A>\n'
-        )]
+    })
     assert lines == expected
 
 
