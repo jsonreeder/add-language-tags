@@ -8,3 +8,5 @@ Index of files:
 - [[file:extract_arabic.py][extract_arabic.py]]: Extracted the lines with Arabic text
 - [[file:integrate.py][integrate.py]]: Generated ~monier_lines_with_tags.xml~
 - [[file:monier.xml][monier.xml]]: The original dictionary file
+- [[file:monier.dtd][monier.dtd]]: Document specifications for the correct XML formatting
+- [[file:combine.py][combine.py]]: Integrates the modified lines (now containing etymologies) into the original dictionary. 
