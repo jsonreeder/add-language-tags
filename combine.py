@@ -17,6 +17,16 @@ def check_line_match(ori_line, mod_line):
         return False
 
 
+def parse_mod_lines(i_string):
+    """Parse the modified lines, as output in other script"""
+
+    lines = i_string.splitlines()
+    line_no = int(lines[0])
+    content = (lines[1])
+
+    return (line_no, content)
+
+
 def test_check_line_match_fail():
     """Make sure that different lines do not match up"""
 
@@ -33,3 +43,16 @@ def test_check_line_match_pass():
     mod_line = '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3> '
 
     assert check_line_match(ori_line, mod_line)
+
+
+def test_parse_mod_line():
+    """Make sure modified lines are parsed correctly"""
+
+    i_line = """17762
+<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>"""
+    expected = (
+        17762,
+        '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>'
+    )
+
+    assert parse_mod_lines(i_line) == expected
