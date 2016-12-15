@@ -1,0 +1,1208 @@
+#+TITLE: Errors in Validation
+* Notes
+This is the output of running the following command:
+#+BEGIN_SRC bash
+xmllint --noout --valid monier_with_tags.xml
+#+END_SRC
+
+It is clear that the specifications for the new tags should be added to the ~.dtd~. I've attempted to do so, but have been unsuccessful.
+* Errors
+monier_with_tags.xml:17763: element lang: validity error : No declaration for attribute script of element lang
+_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:17763: element lang: validity error : No declaration for attribute lang of element lang
+_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:17763: element lang: validity error : No declaration for element lang
+rom_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang>
+                                                                               ^
+monier_with_tags.xml:17763: element p: validity error : Element lang is not declared in p list of possible children
+a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p>
+                                                                               ^
+monier_with_tags.xml:20013: element lang: validity error : No declaration for attribute script of element lang
+<key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:20013: element lang: validity error : No declaration for attribute lang of element lang
+<key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:20013: element lang: validity error : No declaration for element lang
+><body> <lex>m.</lex> = <lang script="A" lang="Arabic">العابدينا</lang>
+                                                                               ^
+monier_with_tags.xml:20013: element body: validity error : Element lang is not declared in body list of possible children
+�دينا</lang> , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body>
+                                                                               ^
+monier_with_tags.xml:21044: element lang: validity error : No declaration for attribute script of element lang
+7th_century</c1>~;~<s>sAha</s>~<c1>=_the_Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:21044: element lang: validity error : No declaration for attribute lang of element lang
+7th_century</c1>~;~<s>sAha</s>~<c1>=_the_Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:21044: element lang: validity error : No declaration for element lang
+1>~;~<s>sAha</s>~<c1>=_the_Persian <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:21044: element c1: validity error : Element lang is not declared in c1 list of possible children
+<s>sAha</s>~<c1>=_the_Persian <lang script="A" lang="Persian">شاه</lang></c1>
+                                                                               ^
+monier_with_tags.xml:32967: element lang: validity error : No declaration for attribute script of element lang
+<key2>ikkavAla</key2></h><body> <c>in_astrology_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:32967: element lang: validity error : No declaration for attribute lang of element lang
+<key2>ikkavAla</key2></h><body> <c>in_astrology_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:32967: element lang: validity error : No declaration for element lang
+/h><body> <c>in_astrology_= <lang script="A" lang="Arabic">إِقْبال</lang>
+                                                                               ^
+monier_with_tags.xml:32967: element c: validity error : Element lang is not declared in c list of possible children
+ script="A" lang="Arabic">إِقْبال</lang> ,_good_fortune_,_prosperity.</c>
+                                                                               ^
+monier_with_tags.xml:33269: element lang: validity error : No declaration for attribute script of element lang
+hc1><key2>itTaSAla</key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33269: element lang: validity error : No declaration for attribute lang of element lang
+hc1><key2>itTaSAla</key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33269: element lang: validity error : No declaration for element lang
+></h><body> <p>fr._Arabic <lang script="A" lang="Arabic">إِتٍّصال</lang>
+                                                                               ^
+monier_with_tags.xml:33269: element p: validity error : Element lang is not declared in p list of possible children
+<body> <p>fr._Arabic <lang script="A" lang="Arabic">إِتٍّصال</lang> </p>
+                                                                               ^
+monier_with_tags.xml:33336: element lang: validity error : No declaration for attribute script of element lang
+TihA</key2></h><body> <lex>f.</lex> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33336: element lang: validity error : No declaration for attribute lang of element lang
+TihA</key2></h><body> <lex>f.</lex> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33336: element lang: validity error : No declaration for element lang
+ex>f.</lex> <p>fr._Arabic <lang script="A" lang="Arabic">إِنْتِها</lang>
+                                                                               ^
+monier_with_tags.xml:33336: element p: validity error : Element lang is not declared in p list of possible children
+</lex> <p>fr._Arabic <lang script="A" lang="Arabic">إِنْتِها</lang> </p>
+                                                                               ^
+monier_with_tags.xml:33420: element lang: validity error : No declaration for attribute script of element lang
+<body> <lex>m.</lex> <c>in_astrology_=_the_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33420: element lang: validity error : No declaration for attribute lang of element lang
+<body> <lex>m.</lex> <c>in_astrology_=_the_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:33420: element lang: validity error : No declaration for element lang
+c>in_astrology_=_the_Arabic <lang script="A" lang="Arabic">إِدْبار</lang>
+                                                                               ^
+monier_with_tags.xml:33420: element c: validity error : Element lang is not declared in c list of possible children
+strology_=_the_Arabic <lang script="A" lang="Arabic">إِدْبار</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:47128: element lang: validity error : No declaration for attribute script of element lang
+_<as0>Yoga</as0><as1><s>yoga</s></as1>_,_=_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:47128: element lang: validity error : No declaration for attribute lang of element lang
+_<as0>Yoga</as0><as1><s>yoga</s></as1>_,_=_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:47128: element lang: validity error : No declaration for element lang
+<as1><s>yoga</s></as1>_,_=_Arabic <lang script="A" lang="Arabic">قبول</lang>
+                                                                               ^
+monier_with_tags.xml:47128: element c: validity error : Element lang is not declared in c list of possible children
+s>yoga</s></as1>_,_=_Arabic <lang script="A" lang="Arabic">قبول</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:51842: element lang: validity error : No declaration for attribute script of element lang
+Gk.</ab>_<gk>1</gk></c>~~;~~<c>and_<ab>Arab.</ab> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:51842: element lang: validity error : No declaration for attribute lang of element lang
+Gk.</ab>_<gk>1</gk></c>~~;~~<c>and_<ab>Arab.</ab> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:51842: element lang: validity error : No declaration for element lang
+</gk></c>~~;~~<c>and_<ab>Arab.</ab> <lang script="A" lang="Arabic">قلم</lang>
+                                                                               ^
+monier_with_tags.xml:51842: element c: validity error : Element lang is not declared in c list of possible children
+</c>~~;~~<c>and_<ab>Arab.</ab> <lang script="A" lang="Arabic">قلم</lang> </c>
+                                                                               ^
+monier_with_tags.xml:52815: element lang: validity error : No declaration for attribute script of element lang
+>n.</lex> <p>in_<ab>astrol.</ab></p> <c>_=_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:52815: element lang: validity error : No declaration for attribute lang of element lang
+>n.</lex> <p>in_<ab>astrol.</ab></p> <c>_=_Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:52815: element lang: validity error : No declaration for element lang
+<ab>astrol.</ab></p> <c>_=_Arabic <lang script="A" lang="Arabic">قبول</lang>
+                                                                               ^
+monier_with_tags.xml:52815: element c: validity error : Element lang is not declared in c list of possible children
+trol.</ab></p> <c>_=_Arabic <lang script="A" lang="Arabic">قبول</lang> ;</c>
+                                                                               ^
+monier_with_tags.xml:66789: element lang: validity error : No declaration for attribute script of element lang
+,~<c><quote>_an_infant_</quote>_;_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:66789: element lang: validity error : No declaration for attribute lang of element lang
+,~<c><quote>_an_infant_</quote>_;_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:66789: element lang: validity error : No declaration for element lang
+infant_</quote>_;_<ab>Pers.</ab> <lang script="A" lang="Persian">كودك</lang>
+                                                                               ^
+monier_with_tags.xml:66789: element c: validity error : Element lang is not declared in c list of possible children
+t_</quote>_;_<ab>Pers.</ab> <lang script="A" lang="Persian">كودك</lang> </c>
+                                                                               ^
+monier_with_tags.xml:68538: element lang: validity error : No declaration for attribute script of element lang
+ody>  <lex>n.</lex> <p><c>fr._the_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:68538: element lang: validity error : No declaration for attribute lang of element lang
+ody>  <lex>n.</lex> <p><c>fr._the_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:68538: element lang: validity error : No declaration for element lang
+<p><c>fr._the_<ab>Pers.</ab> <lang script="A" lang="Persian">خربوزه</lang>
+                                                                               ^
+monier_with_tags.xml:68538: element c: validity error : Element lang is not declared in c list of possible children
+>fr._the_<ab>Pers.</ab> <lang script="A" lang="Persian">خربوزه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:68825: element lang: validity error : No declaration for attribute script of element lang
+</key2><hom>2</hom></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:68825: element lang: validity error : No declaration for attribute lang of element lang
+</key2><hom>2</hom></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:68825: element lang: validity error : No declaration for element lang
+/hom></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish">خان</lang>
+                                                                               ^
+monier_with_tags.xml:68825: element p: validity error : Element lang is not declared in p list of possible children
+</h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish">خان</lang> </p>
+                                                                               ^
+monier_with_tags.xml:69474: element lang: validity error : No declaration for attribute script of element lang
+><hc1>1</hc1><key2>gajanavI</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:69474: element lang: validity error : No declaration for attribute lang of element lang
+><hc1>1</hc1><key2>gajanavI</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:69474: element lang: validity error : No declaration for element lang
+>gajanavI</key2></h><body> <c>= <lang script="A" lang="Arabic">غزنوى</lang>
+                                                                               ^
+monier_with_tags.xml:69474: element c: validity error : Element lang is not declared in c list of possible children
+avI</key2></h><body> <c>= <lang script="A" lang="Arabic">غزنوى</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:69479: element lang: validity error : No declaration for attribute script of element lang
+key2><hom>2</hom></h><body>  <lex>mn.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:69479: element lang: validity error : No declaration for attribute lang of element lang
+key2><hom>2</hom></h><body>  <lex>mn.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:69479: element lang: validity error : No declaration for element lang
+om></h><body>  <lex>mn.</lex> <c>= <lang script="A" lang="Persian">گنج</lang>
+                                                                               ^
+monier_with_tags.xml:69479: element c: validity error : Element lang is not declared in c list of possible children
+نج</lang> a_treasury_,_jewel_room_,_place_where_plate_<etc1/>_is_preserved</c>
+                                                                               ^
+monier_with_tags.xml:69489: element lang: validity error : No declaration for attribute script of element lang
+>gaYja--vara</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:69489: element lang: validity error : No declaration for attribute lang of element lang
+>gaYja--vara</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:69489: element lang: validity error : No declaration for element lang
+></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian">گنجور</lang>
+                                                                               ^
+monier_with_tags.xml:69489: element c: validity error : Element lang is not declared in c list of possible children
+>m.</lex> <c>= <lang script="A" lang="Persian">گنجور</lang> a_treasurer</c>
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for attribute script of element lang
+><body> <c>or</c> <s><sr1/>ri-k<sr1/></s> <p>fr.  <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for attribute lang of element lang
+><body> <c>or</c> <s><sr1/>ri-k<sr1/></s> <p>fr.  <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for element lang
+/c> <s><sr1/>ri-k<sr1/></s> <p>fr.  <lang script="A" lang="Arabic">غير</lang>
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for attribute script of element lang
+ <lang script="A" lang="Arabic">غير</lang> and <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for attribute lang of element lang
+ <lang script="A" lang="Arabic">غير</lang> and <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:74137: element lang: validity error : No declaration for element lang
+lang="Arabic">غير</lang> and <lang script="A" lang="Arabic">قَبول</lang>
+                                                                               ^
+monier_with_tags.xml:74137: element p: validity error : Element lang is not declared in p list of possible children
+"Arabic">غير</lang> and <lang script="A" lang="Arabic">قَبول</lang> </p>
+                                                                               ^
+monier_with_tags.xml:74137: element p: validity error : Element lang is not declared in p list of possible children
+"Arabic">غير</lang> and <lang script="A" lang="Arabic">قَبول</lang> </p>
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for attribute script of element lang
+1>1</hc1><key2>golAma-mAmuda</key2></h><body> <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for attribute lang of element lang
+1>1</hc1><key2>golAma-mAmuda</key2></h><body> <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for element lang
+olAma-mAmuda</key2></h><body> <c> <lang script="A" lang="Arabic">غلام</lang>
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for attribute script of element lang
+c> <lang script="A" lang="Arabic">غلام</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for attribute lang of element lang
+c> <lang script="A" lang="Arabic">غلام</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:75416: element lang: validity error : No declaration for element lang
+" lang="Arabic">غلام</lang> <lang script="A" lang="Arabic">محمود</lang>
+                                                                               ^
+monier_with_tags.xml:75416: element c: validity error : Element lang is not declared in c list of possible children
+="Arabic">غلام</lang> <lang script="A" lang="Arabic">محمود</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:75416: element c: validity error : Element lang is not declared in c list of possible children
+="Arabic">غلام</lang> <lang script="A" lang="Arabic">محمود</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:88326: element lang: validity error : No declaration for attribute script of element lang
+na</key2></h><body> <lex type="inh">m.</lex> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:88326: element lang: validity error : No declaration for attribute lang of element lang
+na</key2></h><body> <lex type="inh">m.</lex> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:88326: element lang: validity error : No declaration for element lang
+body> <lex type="inh">m.</lex> <p>= <lang script="A" lang="Arabic">زين</lang>
+                                                                               ^
+monier_with_tags.xml:88326: element p: validity error : Element lang is not declared in p list of possible children
+ <lex type="inh">m.</lex> <p>= <lang script="A" lang="Arabic">زين</lang> </p>
+                                                                               ^
+monier_with_tags.xml:91399: element lang: validity error : No declaration for attribute script of element lang
+1><hc1>1</hc1><key2>tambIra</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:91399: element lang: validity error : No declaration for attribute lang of element lang
+1><hc1>1</hc1><key2>tambIra</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:91399: element lang: validity error : No declaration for element lang
+2>tambIra</key2></h><body> <c>= <lang script="A" lang="Arabic">تموير</lang>
+                                                                               ^
+monier_with_tags.xml:91399: element c: validity error : Element lang is not declared in c list of possible children
+, <p>in_<ab>astrol.</ab></p>_the_14th_<as0>Yoga</as0><as1><s>yoga</s></as1>.</c>
+                                                                               ^
+monier_with_tags.xml:91606: element lang: validity error : No declaration for attribute script of element lang
+a</key2></h><body> <lex>n.</lex> <p>borrowed_fr. <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:91606: element lang: validity error : No declaration for attribute lang of element lang
+a</key2></h><body> <lex>n.</lex> <p>borrowed_fr. <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:91606: element lang: validity error : No declaration for element lang
+y> <lex>n.</lex> <p>borrowed_fr. <lang script="A" lang="Persian">تربز</lang>
+                                                                               ^
+monier_with_tags.xml:91606: element p: validity error : Element lang is not declared in p list of possible children
+ex>n.</lex> <p>borrowed_fr. <lang script="A" lang="Persian">تربز</lang> </p>
+                                                                               ^
+monier_with_tags.xml:91641: element lang: validity error : No declaration for attribute script of element lang
+I</key2></h><body> <p>in_<ab>astrol.</ab></p> <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:91641: element lang: validity error : No declaration for attribute lang of element lang
+I</key2></h><body> <p>in_<ab>astrol.</ab></p> <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:91641: element lang: validity error : No declaration for element lang
+ <p>in_<ab>astrol.</ab></p> <c> <lang script="A" lang="Arabic">تربيع</lang>
+                                                                               ^
+monier_with_tags.xml:91641: element c: validity error : Element lang is not declared in c list of possible children
+</ab></p> <c> <lang script="A" lang="Arabic">تربيع</lang> , quadrature.</c>
+                                                                               ^
+monier_with_tags.xml:92079: element lang: validity error : No declaration for attribute script of element lang
+</h><body> <lex>f.</lex> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92079: element lang: validity error : No declaration for attribute lang of element lang
+</h><body> <lex>f.</lex> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92079: element lang: validity error : No declaration for element lang
+</lex> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic">تثليث</lang>
+                                                                               ^
+monier_with_tags.xml:92079: element c: validity error : Element lang is not declared in c list of possible children
+ab>astron.</ab>_= <lang script="A" lang="Arabic">تثليث</lang> , trigon.</c>
+                                                                               ^
+monier_with_tags.xml:92094: element lang: validity error : No declaration for attribute script of element lang
+<ab>astron.</ab></c> <eq/> <s>tAS<sr1/></s> , <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92094: element lang: validity error : No declaration for attribute lang of element lang
+<ab>astron.</ab></c> <eq/> <s>tAS<sr1/></s> , <c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92094: element lang: validity error : No declaration for element lang
+c> <eq/> <s>tAS<sr1/></s> , <c> <lang script="A" lang="Arabic">تسيير</lang>
+                                                                               ^
+monier_with_tags.xml:92094: element c: validity error : Element lang is not declared in c list of possible children
+/> <s>tAS<sr1/></s> , <c> <lang script="A" lang="Arabic">تسيير</lang> .</c>
+                                                                               ^
+monier_with_tags.xml:92116: element lang: validity error : No declaration for attribute script of element lang
+2>tasdI</key2></h><body> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92116: element lang: validity error : No declaration for attribute lang of element lang
+2>tasdI</key2></h><body> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:92116: element lang: validity error : No declaration for element lang
+ody> <c>in_<ab>astron.</ab>_= <lang script="A" lang="Arabic">تسْديس</lang>
+                                                                               ^
+monier_with_tags.xml:92116: element c: validity error : Element lang is not declared in c list of possible children
+astron.</ab>_= <lang script="A" lang="Arabic">تسْديس</lang> ,_hexagon.</c>
+                                                                               ^
+monier_with_tags.xml:94049: element lang: validity error : No declaration for attribute script of element lang
+d_of_arrow</c> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:94049: element lang: validity error : No declaration for attribute lang of element lang
+d_of_arrow</c> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:94049: element lang: validity error : No declaration for element lang
+ <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">تير</lang>
+                                                                               ^
+monier_with_tags.xml:94049: element c: validity error : Element lang is not declared in c list of possible children
+ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">تير</lang> </c>
+                                                                               ^
+monier_with_tags.xml:94968: element lang: validity error : No declaration for attribute script of element lang
+ <lex type="inh">m.</lex>  <eq/> <s>tUta</s> <p> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:94968: element lang: validity error : No declaration for attribute lang of element lang
+ <lex type="inh">m.</lex>  <eq/> <s>tUta</s> <p> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:94968: element lang: validity error : No declaration for element lang
+h">m.</lex>  <eq/> <s>tUta</s> <p> <lang script="A" lang="Persian">توت</lang>
+                                                                               ^
+monier_with_tags.xml:94968: element p: validity error : Element lang is not declared in p list of possible children
+</lex>  <eq/> <s>tUta</s> <p> <lang script="A" lang="Persian">توت</lang> </p>
+                                                                               ^
+monier_with_tags.xml:100853: element lang: validity error : No declaration for attribute script of element lang
+2></h><body> <lex>n.</lex> <p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:100853: element lang: validity error : No declaration for attribute lang of element lang
+2></h><body> <lex>n.</lex> <p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:100853: element lang: validity error : No declaration for element lang
+n.</lex> <p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian">دربار</lang>
+                                                                               ^
+monier_with_tags.xml:100853: element p: validity error : Element lang is not declared in p list of possible children
+ex> <p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian">دربار</lang> </p>
+                                                                               ^
+monier_with_tags.xml:112773: element lang: validity error : No declaration for attribute script of element lang
+_fifth_<as0>Yoga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:112773: element lang: validity error : No declaration for attribute lang of element lang
+_fifth_<as0>Yoga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:112773: element lang: validity error : No declaration for element lang
+ga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic">نقل</lang>
+                                                                               ^
+monier_with_tags.xml:112773: element p: validity error : Element lang is not declared in p list of possible children
+s0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic">نقل</lang> </p>
+                                                                               ^
+monier_with_tags.xml:112774: element lang: validity error : No declaration for attribute script of element lang
+_fifth_<as0>Yoga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:112774: element lang: validity error : No declaration for attribute lang of element lang
+_fifth_<as0>Yoga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:112774: element lang: validity error : No declaration for element lang
+ga</as0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic">نقل</lang>
+                                                                               ^
+monier_with_tags.xml:112774: element p: validity error : Element lang is not declared in p list of possible children
+s0><as1><s>yoga</s></as1>_<p>= <lang script="A" lang="Arabic">نقل</lang> </p>
+                                                                               ^
+monier_with_tags.xml:118173: element lang: validity error : No declaration for attribute script of element lang
+_procession</c> <ls>Sa1h.</ls> <p><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:118173: element lang: validity error : No declaration for attribute lang of element lang
+_procession</c> <ls>Sa1h.</ls> <p><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:118173: element lang: validity error : No declaration for element lang
+<ls>Sa1h.</ls> <p><ab>Pers.</ab> <lang script="A" lang="Persian">نشان</lang>
+                                                                               ^
+monier_with_tags.xml:118173: element p: validity error : Element lang is not declared in p list of possible children
+1h.</ls> <p><ab>Pers.</ab> <lang script="A" lang="Persian">نشان</lang> ?</p>
+                                                                               ^
+monier_with_tags.xml:133866: element lang: validity error : No declaration for attribute script of element lang
+ey2>pAtasAha</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:133866: element lang: validity error : No declaration for attribute lang of element lang
+ey2>pAtasAha</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:133866: element lang: validity error : No declaration for element lang
+/h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian">پادشاه</lang>
+                                                                               ^
+monier_with_tags.xml:133866: element c: validity error : Element lang is not declared in c list of possible children
+x>m.</lex> <c>= <lang script="A" lang="Persian">پادشاه</lang> ,_a_king</c>
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for attribute script of element lang
+">m.</lex> <c>an_elephant</c> <p><cf/>~<c>Aribic_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for attribute lang of element lang
+">m.</lex> <c>an_elephant</c> <p><cf/>~<c>Aribic_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for element lang
+an_elephant</c> <p><cf/>~<c>Aribic_ <lang script="A" lang="Arabic">فيل</lang>
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for attribute script of element lang
+cript="A" lang="Arabic">فيل</lang>_ , Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for attribute lang of element lang
+cript="A" lang="Arabic">فيل</lang>_ , Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:137220: element lang: validity error : No declaration for element lang
+="Arabic">فيل</lang>_ , Persian <lang script="A" lang="Persian">پيل</lang>
+                                                                               ^
+monier_with_tags.xml:137220: element c: validity error : Element lang is not declared in c list of possible children
+bic">فيل</lang>_ , Persian <lang script="A" lang="Persian">پيل</lang> </c>
+                                                                               ^
+monier_with_tags.xml:137220: element c: validity error : Element lang is not declared in c list of possible children
+bic">فيل</lang>_ , Persian <lang script="A" lang="Persian">پيل</lang> </c>
+                                                                               ^
+monier_with_tags.xml:138895: element lang: validity error : No declaration for attribute script of element lang
+="ns">Pesha1war</as0><as1>Peshawar</as1></c> <p> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:138895: element lang: validity error : No declaration for attribute lang of element lang
+="ns">Pesha1war</as0><as1>Peshawar</as1></c> <p> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:138895: element lang: validity error : No declaration for element lang
+><as1>Peshawar</as1></c> <p> <lang script="A" lang="Persian">پيشاور</lang>
+                                                                               ^
+monier_with_tags.xml:138895: element p: validity error : Element lang is not declared in p list of possible children
+>Peshawar</as1></c> <p> <lang script="A" lang="Persian">پيشاور</lang> </p>
+                                                                               ^
+monier_with_tags.xml:141544: element lang: validity error : No declaration for attribute script of element lang
+c> <ls>L.</ls> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:141544: element lang: validity error : No declaration for attribute lang of element lang
+c> <ls>L.</ls> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:141544: element lang: validity error : No declaration for element lang
+b>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">فيروزه</lang>
+                                                                               ^
+monier_with_tags.xml:141544: element c: validity error : Element lang is not declared in c list of possible children
+</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">فيروزه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:141545: element lang: validity error : No declaration for attribute script of element lang
+c> <ls>L.</ls> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:141545: element lang: validity error : No declaration for attribute lang of element lang
+c> <ls>L.</ls> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:141545: element lang: validity error : No declaration for element lang
+b>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">فيروزه</lang>
+                                                                               ^
+monier_with_tags.xml:141545: element c: validity error : Element lang is not declared in c list of possible children
+</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">فيروزه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:147814: element lang: validity error : No declaration for attribute script of element lang
+f_a_prince</c> <ls>Cat.</ls> <p><s>sAha</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:147814: element lang: validity error : No declaration for attribute lang of element lang
+f_a_prince</c> <ls>Cat.</ls> <p><s>sAha</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:147814: element lang: validity error : No declaration for element lang
+ <ls>Cat.</ls> <p><s>sAha</s>~<c>= <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:147814: element c: validity error : Element lang is not declared in c list of possible children
+Cat.</ls> <p><s>sAha</s>~<c>= <lang script="A" lang="Persian">شاه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for attribute script of element lang
+"ns">Hindu1sta1ni1</as0><as1>Hindustani</as1> <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for attribute lang of element lang
+"ns">Hindu1sta1ni1</as0><as1>Hindustani</as1> <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for element lang
+as0><as1>Hindustani</as1> <lang script="A" lang="Hindustani">پتهركي</lang>
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for attribute script of element lang
+ipt="A" lang="Hindustani">پتهركي</lang> <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for attribute lang of element lang
+ipt="A" lang="Hindustani">پتهركي</lang> <lang script="A" lang="Hindustani"
+                                                                               ^
+monier_with_tags.xml:154093: element lang: validity error : No declaration for element lang
+ndustani">پتهركي</lang> <lang script="A" lang="Hindustani">پهول</lang>
+                                                                               ^
+monier_with_tags.xml:154093: element c1: validity error : Element lang is not declared in c1 list of possible children
+ni">پتهركي</lang> <lang script="A" lang="Hindustani">پهول</lang> </c1>
+                                                                               ^
+monier_with_tags.xml:154093: element c1: validity error : Element lang is not declared in c1 list of possible children
+ni">پتهركي</lang> <lang script="A" lang="Hindustani">پهول</lang> </c1>
+                                                                               ^
+monier_with_tags.xml:154404: element lang: validity error : No declaration for attribute script of element lang
+prema--sAhi</key2></h><body> <p><s>sAhi</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:154404: element lang: validity error : No declaration for attribute lang of element lang
+prema--sAhi</key2></h><body> <p><s>sAhi</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:154404: element lang: validity error : No declaration for element lang
+ey2></h><body> <p><s>sAhi</s>~<c>= <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:154404: element c: validity error : Element lang is not declared in c list of possible children
+/h><body> <p><s>sAhi</s>~<c>= <lang script="A" lang="Persian">شاه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:155333: element lang: validity error : No declaration for attribute script of element lang
+>kaSmIra</s></as1></c> <ls>Cat.</ls> <p>= فتح <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:155333: element lang: validity error : No declaration for attribute lang of element lang
+>kaSmIra</s></as1></c> <ls>Cat.</ls> <p>= فتح <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:155333: element lang: validity error : No declaration for element lang
+as1></c> <ls>Cat.</ls> <p>= فتح <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:155333: element p: validity error : Element lang is not declared in p list of possible children
+/c> <ls>Cat.</ls> <p>= فتح <lang script="A" lang="Persian">شاه</lang> </p>
+                                                                               ^
+monier_with_tags.xml:155334: element lang: validity error : No declaration for attribute script of element lang
+><as1><s>kaSmIra</s></as1></c> <ls>Cat.</ls> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:155334: element lang: validity error : No declaration for attribute lang of element lang
+><as1><s>kaSmIra</s></as1></c> <ls>Cat.</ls> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:155334: element lang: validity error : No declaration for element lang
+ra</s></as1></c> <ls>Cat.</ls> <p>= <lang script="A" lang="Arabic">فتح</lang>
+                                                                               ^
+monier_with_tags.xml:155334: element p: validity error : Element lang is not declared in p list of possible children
+</c> <ls>Cat.</ls> <p>= <lang script="A" lang="Arabic">فتح</lang> شاه </p>
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for attribute script of element lang
+ls>Hariv._</ls> <b><c><ab>cf.</ab>_<ab>Arab.</ab> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for attribute lang of element lang
+ls>Hariv._</ls> <b><c><ab>cf.</ab>_<ab>Arab.</ab> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for element lang
+><c><ab>cf.</ab>_<ab>Arab.</ab> <lang script="A" lang="Arabic">فانيذ</lang>
+                                                                               ^
+monier_with_tags.xml:155839: element c: validity error : Element lang is not declared in c list of possible children
+ab>cf.</ab>_<ab>Arab.</ab> <lang script="A" lang="Arabic">فانيذ</lang> </c>
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for attribute script of element lang
+ic">فانيذ</lang> </c>~~;~~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for attribute lang of element lang
+ic">فانيذ</lang> </c>~~;~~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:155839: element lang: validity error : No declaration for element lang
+ng> </c>~~;~~<c><ab>Pers.</ab> <lang script="A" lang="Persian">پانيد</lang>
+                                                                               ^
+monier_with_tags.xml:155839: element c: validity error : Element lang is not declared in c list of possible children
+> <lang script="A" lang="Persian">پانيد</lang> ;_medieval_<ab>Lat.</ab></c>
+                                                                               ^
+monier_with_tags.xml:156211: element lang: validity error : No declaration for attribute script of element lang
+ <lex>f.</lex> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:156211: element lang: validity error : No declaration for attribute lang of element lang
+ <lex>f.</lex> <p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:156211: element lang: validity error : No declaration for element lang
+p><ab>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">بنده</lang>
+                                                                               ^
+monier_with_tags.xml:156211: element c: validity error : Element lang is not declared in c list of possible children
+>cf.</ab>~<c><ab>Pers.</ab> <lang script="A" lang="Persian">بنده</lang> </c>
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for attribute script of element lang
+>bahrAmaKAna</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for attribute lang of element lang
+>bahrAmaKAna</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for element lang
+></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Persian">بهرام</lang>
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for attribute script of element lang
+lang script="A" lang="Persian">بهرام</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for attribute lang of element lang
+lang script="A" lang="Persian">بهرام</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:158065: element lang: validity error : No declaration for element lang
+" lang="Persian">بهرام</lang> <lang script="A" lang="Turkish">خان</lang>
+                                                                               ^
+monier_with_tags.xml:158065: element c: validity error : Element lang is not declared in c list of possible children
+ng="Persian">بهرام</lang> <lang script="A" lang="Turkish">خان</lang></c>
+                                                                               ^
+monier_with_tags.xml:158065: element c: validity error : Element lang is not declared in c list of possible children
+ng="Persian">بهرام</lang> <lang script="A" lang="Turkish">خان</lang></c>
+                                                                               ^
+monier_with_tags.xml:158639: element lang: validity error : No declaration for attribute script of element lang
+c>~<see/>~<c>above_</c></p> <c>_=_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158639: element lang: validity error : No declaration for attribute lang of element lang
+c>~<see/>~<c>above_</c></p> <c>_=_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158639: element lang: validity error : No declaration for element lang
+ve_</c></p> <c>_=_<ab>Pers.</ab> <lang script="A" lang="Persian">بالش</lang>
+                                                                               ^
+monier_with_tags.xml:158639: element c: validity error : Element lang is not declared in c list of possible children
+ers.</ab> <lang script="A" lang="Persian">بالش</lang> a_pillow_,_cushion</c>
+                                                                               ^
+monier_with_tags.xml:158799: element lang: validity error : No declaration for attribute script of element lang
+onferred_by_Muhammadan_kings_<p>=_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158799: element lang: validity error : No declaration for attribute lang of element lang
+onferred_by_Muhammadan_kings_<p>=_<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:158799: element lang: validity error : No declaration for element lang
+adan_kings_<p>=_<ab>Pers.</ab> <lang script="A" lang="Persian">بهادر</lang>
+                                                                               ^
+monier_with_tags.xml:158799: element p: validity error : Element lang is not declared in p list of possible children
+kings_<p>=_<ab>Pers.</ab> <lang script="A" lang="Persian">بهادر</lang> </p>
+                                                                               ^
+monier_with_tags.xml:165463: element lang: validity error : No declaration for attribute script of element lang
+ey2></h><body> <lex>m.</lex> <p><s>SAha</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:165463: element lang: validity error : No declaration for attribute lang of element lang
+ey2></h><body> <lex>m.</lex> <p><s>SAha</s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:165463: element lang: validity error : No declaration for element lang
+ <lex>m.</lex> <p><s>SAha</s>~<c>= <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:165463: element c: validity error : Element lang is not declared in c list of possible children
+>m.</lex> <p><s>SAha</s>~<c>= <lang script="A" lang="Persian">شاه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:166134: element lang: validity error : No declaration for attribute script of element lang
+></h><body> <lex>m.</lex> <p><s>s<sr1/></s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:166134: element lang: validity error : No declaration for attribute lang of element lang
+></h><body> <lex>m.</lex> <p><s>s<sr1/></s>~<c>= <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:166134: element lang: validity error : No declaration for element lang
+ex>m.</lex> <p><s>s<sr1/></s>~<c>= <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:166134: element c: validity error : Element lang is not declared in c list of possible children
+</lex> <p><s>s<sr1/></s>~<c>= <lang script="A" lang="Persian">شاه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for attribute script of element lang
+y2>majamudAra</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for attribute lang of element lang
+y2>majamudAra</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for element lang
+2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">مجموع</lang>
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for attribute script of element lang
+<lang script="A" lang="Arabic">مجموع</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for attribute lang of element lang
+<lang script="A" lang="Arabic">مجموع</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:168893: element lang: validity error : No declaration for element lang
+A" lang="Arabic">مجموع</lang> <lang script="A" lang="Persian">دار</lang>
+                                                                               ^
+monier_with_tags.xml:168893: element c: validity error : Element lang is not declared in c list of possible children
+ng="Arabic">مجموع</lang> <lang script="A" lang="Persian">دار</lang> </c>
+                                                                               ^
+monier_with_tags.xml:168893: element c: validity error : Element lang is not declared in c list of possible children
+ng="Arabic">مجموع</lang> <lang script="A" lang="Persian">دار</lang> </c>
+                                                                               ^
+monier_with_tags.xml:169144: element lang: validity error : No declaration for attribute script of element lang
+c> <lex type="hw">n.</lex> <p>?</p>_<p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:169144: element lang: validity error : No declaration for attribute lang of element lang
+c> <lex type="hw">n.</lex> <p>?</p>_<p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:169144: element lang: validity error : No declaration for element lang
+="hw">n.</lex> <p>?</p>_<p>fr._Arabic <lang script="A" lang="Arabic">من</lang>
+                                                                               ^
+monier_with_tags.xml:169144: element p: validity error : Element lang is not declared in p list of possible children
+>n.</lex> <p>?</p>_<p>fr._Arabic <lang script="A" lang="Arabic">من</lang> </p>
+                                                                               ^
+monier_with_tags.xml:169145: element lang: validity error : No declaration for attribute script of element lang
+1</hc1><key2>maRaU</key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:169145: element lang: validity error : No declaration for attribute lang of element lang
+1</hc1><key2>maRaU</key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:169145: element lang: validity error : No declaration for element lang
+aRaU</key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic">منع</lang>
+                                                                               ^
+monier_with_tags.xml:169145: element p: validity error : Element lang is not declared in p list of possible children
+/key2></h><body> <p>fr._Arabic <lang script="A" lang="Arabic">منع</lang> </p>
+                                                                               ^
+monier_with_tags.xml:172312: element lang: validity error : No declaration for attribute script of element lang
+y> <lex>m.</lex> <p>in_<ab>astrol.</ab></p> <c>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:172312: element lang: validity error : No declaration for attribute lang of element lang
+y> <lex>m.</lex> <p>in_<ab>astrol.</ab></p> <c>_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:172312: element lang: validity error : No declaration for element lang
+x> <p>in_<ab>astrol.</ab></p> <c>_= <lang script="A" lang="Arabic">منع</lang>
+                                                                               ^
+monier_with_tags.xml:172312: element c: validity error : Element lang is not declared in c list of possible children
+g script="A" lang="Arabic">منع</lang> ,_a_<ab>partic.</ab>_constellation.</c>
+                                                                               ^
+monier_with_tags.xml:173692: element lang: validity error : No declaration for attribute script of element lang
+><key2>malika</key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:173692: element lang: validity error : No declaration for attribute lang of element lang
+><key2>malika</key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:173692: element lang: validity error : No declaration for element lang
+/key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Arabic">ملك</lang>
+                                                                               ^
+monier_with_tags.xml:173692: element p: validity error : Element lang is not declared in p list of possible children
+></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Arabic">ملك</lang> </p>
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for attribute script of element lang
+ahamada-edala</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for attribute lang of element lang
+ahamada-edala</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for element lang
+ey2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">محمد</lang>
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for attribute script of element lang
+>= <lang script="A" lang="Arabic">محمد</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for attribute lang of element lang
+>= <lang script="A" lang="Arabic">محمد</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176841: element lang: validity error : No declaration for element lang
+" lang="Arabic">محمد</lang> <lang script="A" lang="Arabic">عادِل</lang>
+                                                                               ^
+monier_with_tags.xml:176841: element c: validity error : Element lang is not declared in c list of possible children
+�مد</lang> <lang script="A" lang="Arabic">عادِل</lang> N._of_a_prince</c>
+                                                                               ^
+monier_with_tags.xml:176841: element c: validity error : Element lang is not declared in c list of possible children
+�مد</lang> <lang script="A" lang="Arabic">عادِل</lang> N._of_a_prince</c>
+                                                                               ^
+monier_with_tags.xml:176842: element lang: validity error : No declaration for attribute script of element lang
+ey2>mahammada</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176842: element lang: validity error : No declaration for attribute lang of element lang
+ey2>mahammada</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176842: element lang: validity error : No declaration for element lang
+ey2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">محمد</lang>
+                                                                               ^
+monier_with_tags.xml:176842: element c: validity error : Element lang is not declared in c list of possible children
+ex>m.</lex> <c>= <lang script="A" lang="Arabic">محمد</lang> N._of_a_king</c>
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for attribute script of element lang
+>mahmada-KAna</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for attribute lang of element lang
+>mahmada-KAna</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for element lang
+ey2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">محمد</lang>
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for attribute script of element lang
+= <lang script="A" lang="Arabic">محمد</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for attribute lang of element lang
+= <lang script="A" lang="Arabic">محمد</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:176895: element lang: validity error : No declaration for element lang
+="A" lang="Arabic">محمد</lang> <lang script="A" lang="Turkish">خان</lang>
+                                                                               ^
+monier_with_tags.xml:176895: element c: validity error : Element lang is not declared in c list of possible children
+c">محمد</lang> <lang script="A" lang="Turkish">خان</lang> N._of_a_man</c>
+                                                                               ^
+monier_with_tags.xml:176895: element c: validity error : Element lang is not declared in c list of possible children
+c">محمد</lang> <lang script="A" lang="Turkish">خان</lang> N._of_a_man</c>
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for attribute script of element lang
+muda-gajanavI</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for attribute lang of element lang
+muda-gajanavI</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for element lang
+2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">محمود</lang>
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for attribute script of element lang
+ <lang script="A" lang="Arabic">محمود</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for attribute lang of element lang
+ <lang script="A" lang="Arabic">محمود</lang> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:178367: element lang: validity error : No declaration for element lang
+lang="Arabic">محمود</lang> <lang script="A" lang="Arabic">غزنوى</lang>
+                                                                               ^
+monier_with_tags.xml:178367: element c: validity error : Element lang is not declared in c list of possible children
+mu1d</as0><as1>Mahmud</as1>_of_<as0 type="ns">Ghazni1</as0><as1>Ghazni</as1></c>
+                                                                               ^
+monier_with_tags.xml:178367: element c: validity error : Element lang is not declared in c list of possible children
+mu1d</as0><as1>Mahmud</as1>_of_<as0 type="ns">Ghazni1</as0><as1>Ghazni</as1></c>
+                                                                               ^
+monier_with_tags.xml:179867: element lang: validity error : No declaration for attribute script of element lang
+2>mirA--KAna</key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:179867: element lang: validity error : No declaration for attribute lang of element lang
+2>mirA--KAna</key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:179867: element lang: validity error : No declaration for element lang
+key2></h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish">خان</lang>
+                                                                               ^
+monier_with_tags.xml:179867: element p: validity error : Element lang is not declared in p list of possible children
+</h><body> <lex>m.</lex> <p>= <lang script="A" lang="Turkish">خان</lang> </p>
+                                                                               ^
+monier_with_tags.xml:179985: element lang: validity error : No declaration for attribute script of element lang
+x> <c>or</c> <lex type="hw">n.</lex> <p>perhaps_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:179985: element lang: validity error : No declaration for attribute lang of element lang
+x> <c>or</c> <lex type="hw">n.</lex> <p>perhaps_= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:179985: element lang: validity error : No declaration for element lang
+lex type="hw">n.</lex> <p>perhaps_= <lang script="A" lang="Arabic">مصر</lang>
+                                                                               ^
+monier_with_tags.xml:179985: element p: validity error : Element lang is not declared in p list of possible children
+" lang="Arabic">مصر</lang> <as0>Misr</as0><as1><s>misr</s></as1>_,_Egypt?</p>
+                                                                               ^
+monier_with_tags.xml:180016: element lang: validity error : No declaration for attribute script of element lang
+~<root/>1.~<s>mih</s>~,~<c>but_prob._the_Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:180016: element lang: validity error : No declaration for attribute lang of element lang
+~<root/>1.~<s>mih</s>~,~<c>but_prob._the_Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:180016: element lang: validity error : No declaration for element lang
+mih</s>~,~<c>but_prob._the_Persian <lang script="A" lang="Persian">مهر</lang>
+                                                                               ^
+monier_with_tags.xml:180016: element c: validity error : Element lang is not declared in c list of possible children
+s>~,~<c>but_prob._the_Persian <lang script="A" lang="Persian">مهر</lang> </c>
+                                                                               ^
+monier_with_tags.xml:180185: element lang: validity error : No declaration for attribute script of element lang
+key2>mukAriRA</key2></h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180185: element lang: validity error : No declaration for attribute lang of element lang
+key2>mukAriRA</key2></h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180185: element lang: validity error : No declaration for element lang
+</h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic">مقارنة</lang>
+                                                                               ^
+monier_with_tags.xml:180185: element c: validity error : Element lang is not declared in c list of possible children
+>astrol.</ab></p>_a_<ab>partic.</ab>_position_or_conjunction_of_the_planets.</c>
+                                                                               ^
+monier_with_tags.xml:180186: element lang: validity error : No declaration for attribute script of element lang
+key2>mukAvilA</key2></h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180186: element lang: validity error : No declaration for attribute lang of element lang
+key2>mukAvilA</key2></h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180186: element lang: validity error : No declaration for element lang
+</h><body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic">مقابلة</lang>
+                                                                               ^
+monier_with_tags.xml:180186: element c: validity error : Element lang is not declared in c list of possible children
+body> <lex>f.</lex> <c>= <lang script="A" lang="Arabic">مقابلة</lang> </c>
+                                                                               ^
+monier_with_tags.xml:180930: element lang: validity error : No declaration for attribute script of element lang
+><hc1>1</hc1><key2>muTaSila</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180930: element lang: validity error : No declaration for attribute lang of element lang
+><hc1>1</hc1><key2>muTaSila</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:180930: element lang: validity error : No declaration for element lang
+aSila</key2></h><body> <c>= <lang script="A" lang="Arabic">مُتّصِل</lang>
+                                                                               ^
+monier_with_tags.xml:180930: element c: validity error : Element lang is not declared in c list of possible children
+_<ab>astrol.</ab></p>_N._of_the_third_<as0>Yoga</as0><as1><s>yoga</s></as1>.</c>
+                                                                               ^
+monier_with_tags.xml:181181: element lang: validity error : No declaration for attribute script of element lang
+1><hc1>1</hc1><key2>munTahA</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181181: element lang: validity error : No declaration for attribute lang of element lang
+1><hc1>1</hc1><key2>munTahA</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181181: element lang: validity error : No declaration for element lang
+2>munTahA</key2></h><body> <c>= <lang script="A" lang="Arabic">منتهى</lang>
+                                                                               ^
+monier_with_tags.xml:181181: element c: validity error : Element lang is not declared in c list of possible children
+<lang script="A" lang="Arabic">منتهى</lang> , an_<ab>astrol.</ab>_term.</c>
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for attribute script of element lang
+1>1</hc1><key2>murasidAbAda</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for attribute lang of element lang
+1>1</hc1><key2>murasidAbAda</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for element lang
+urasidAbAda</key2></h><body> <c>= <lang script="A" lang="Arabic">مرشد</lang>
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for attribute script of element lang
+= <lang script="A" lang="Arabic">مرشد</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for attribute lang of element lang
+= <lang script="A" lang="Arabic">مرشد</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:181246: element lang: validity error : No declaration for element lang
+A" lang="Arabic">مرشد</lang> <lang script="A" lang="Persian">آباد</lang>
+                                                                               ^
+monier_with_tags.xml:181246: element c: validity error : Element lang is not declared in c list of possible children
+> <lang script="A" lang="Persian">آباد</lang> Murshidabad_,_N._of_a_city</c>
+                                                                               ^
+monier_with_tags.xml:181246: element c: validity error : Element lang is not declared in c list of possible children
+> <lang script="A" lang="Persian">آباد</lang> Murshidabad_,_N._of_a_city</c>
+                                                                               ^
+monier_with_tags.xml:181247: element lang: validity error : No declaration for attribute script of element lang
+y2>murAda</key2></h><body> <lex>m.</lex> <c>=</c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181247: element lang: validity error : No declaration for attribute lang of element lang
+y2>murAda</key2></h><body> <lex>m.</lex> <c>=</c> <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181247: element lang: validity error : No declaration for element lang
+</h><body> <lex>m.</lex> <c>=</c> <lang script="A" lang="Arabic">مراد</lang>
+                                                                               ^
+monier_with_tags.xml:181247: element body: validity error : Element lang is not declared in body list of possible children
+ipt="A" lang="Arabic">مراد</lang> ,  <c>N._of_a_man</c> <ls>ib.</ls> </body>
+                                                                               ^
+monier_with_tags.xml:181358: element lang: validity error : No declaration for attribute script of element lang
+<hc1>1</hc1><key2>muSallaha</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181358: element lang: validity error : No declaration for attribute lang of element lang
+<hc1>1</hc1><key2>muSallaha</key2></h><body> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:181358: element lang: validity error : No declaration for element lang
+Sallaha</key2></h><body> <c>= <lang script="A" lang="Arabic">مصالحة</lang>
+                                                                               ^
+monier_with_tags.xml:181358: element c: validity error : Element lang is not declared in c list of possible children
+�الحة</lang> <quote>_reconciliation_</quote>_,_an_<ab>astrol.</ab>_term.</c>
+                                                                               ^
+monier_with_tags.xml:182140: element lang: validity error : No declaration for attribute script of element lang
+</key2></h><body> <c>and</c> <s>mUsarIPa</s> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:182140: element lang: validity error : No declaration for attribute lang of element lang
+</key2></h><body> <c>and</c> <s>mUsarIPa</s> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:182140: element lang: validity error : No declaration for element lang
+>and</c> <s>mUsarIPa</s> <c>= <lang script="A" lang="Arabic">مُصرِف</lang>
+                                                                               ^
+monier_with_tags.xml:182140: element c: validity error : Element lang is not declared in c list of possible children
+<ab>astrol.</ab></p>_N._of_the_fourth_<as0>Yoga</as0><as1><s>yoga</s></as1>.</c>
+                                                                               ^
+monier_with_tags.xml:184493: element lang: validity error : No declaration for attribute script of element lang
+><key2>mOsula</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:184493: element lang: validity error : No declaration for attribute lang of element lang
+><key2>mOsula</key2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:184493: element lang: validity error : No declaration for element lang
+ey2></h><body> <lex>m.</lex> <c>= <lang script="A" lang="Arabic">مسلم</lang>
+                                                                               ^
+monier_with_tags.xml:184493: element c: validity error : Element lang is not declared in c list of possible children
+مسلم</lang> a_Moslim_,_<as0 type="ns">Musalma1n</as0><as1>Musalman</as1></c>
+                                                                               ^
+monier_with_tags.xml:186509: element lang: validity error : No declaration for attribute script of element lang
+y2>yamayA</key2></h><body> <c>said_to_be_equal_to <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:186509: element lang: validity error : No declaration for attribute lang of element lang
+y2>yamayA</key2></h><body> <c>said_to_be_equal_to <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:186509: element lang: validity error : No declaration for element lang
+</h><body> <c>said_to_be_equal_to <lang script="A" lang="Arabic">جمعة</lang>
+                                                                               ^
+monier_with_tags.xml:186509: element c: validity error : Element lang is not declared in c list of possible children
+�</lang> , N._of_the_6th_astronomical_<as0>Yoga</as0><as1><s>yoga</s></as1>.</c>
+                                                                               ^
+monier_with_tags.xml:191393: element lang: validity error : No declaration for attribute script of element lang
+or</c> <lex type="hw">n.</lex> <p><cf/>~<c>Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:191393: element lang: validity error : No declaration for attribute lang of element lang
+or</c> <lex type="hw">n.</lex> <p><cf/>~<c>Arabic <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:191393: element lang: validity error : No declaration for element lang
+="hw">n.</lex> <p><cf/>~<c>Arabic <lang script="A" lang="Arabic">رمال</lang>
+                                                                               ^
+monier_with_tags.xml:191393: element c: validity error : Element lang is not declared in c list of possible children
+>n.</lex> <p><cf/>~<c>Arabic <lang script="A" lang="Arabic">رمال</lang> </c>
+                                                                               ^
+monier_with_tags.xml:202269: element lang: validity error : No declaration for attribute script of element lang
+ma</key2></h><body> <lex>m.</lex> <p>fr._Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:202269: element lang: validity error : No declaration for attribute lang of element lang
+ma</key2></h><body> <lex>m.</lex> <p>fr._Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:202269: element lang: validity error : No declaration for element lang
+> <lex>m.</lex> <p>fr._Persian <lang script="A" lang="Persian">بادام</lang>
+                                                                               ^
+monier_with_tags.xml:202269: element p: validity error : Element lang is not declared in p list of possible children
+x>m.</lex> <p>fr._Persian <lang script="A" lang="Persian">بادام</lang> </p>
+                                                                               ^
+monier_with_tags.xml:213481: element lang: validity error : No declaration for attribute script of element lang
+kr2it</as0><as1>Sanskrit</as1>_word</c1>~;~<cf/>  <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:213481: element lang: validity error : No declaration for attribute lang of element lang
+kr2it</as0><as1>Sanskrit</as1>_word</c1>~;~<cf/>  <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:213481: element lang: validity error : No declaration for element lang
+Sanskrit</as1>_word</c1>~;~<cf/>  <lang script="A" lang="Arabic">وداع</lang>
+                                                                               ^
+monier_with_tags.xml:213481: element p: validity error : Element lang is not declared in p list of possible children
+rit</as1>_word</c1>~;~<cf/>  <lang script="A" lang="Arabic">وداع</lang> </p>
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for attribute script of element lang
+ex> <c>a_kind_of_sweetmeat_<p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for attribute lang of element lang
+ex> <c>a_kind_of_sweetmeat_<p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for element lang
+_sweetmeat_<p>fr._<ab>Pers.</ab> <lang script="A" lang="Persian">پاره</lang>
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for attribute script of element lang
+ <lang script="A" lang="Persian">پاره</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for attribute lang of element lang
+ <lang script="A" lang="Persian">پاره</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:230037: element lang: validity error : No declaration for element lang
+"A" lang="Persian">پاره</lang> <lang script="A" lang="Persian">شكر</lang>
+                                                                               ^
+monier_with_tags.xml:230037: element p: validity error : Element lang is not declared in p list of possible children
+ang="Persian">پاره</lang> <lang script="A" lang="Persian">شكر</lang> </p>
+                                                                               ^
+monier_with_tags.xml:230037: element p: validity error : Element lang is not declared in p list of possible children
+ang="Persian">پاره</lang> <lang script="A" lang="Persian">شكر</lang> </p>
+                                                                               ^
+monier_with_tags.xml:235139: element lang: validity error : No declaration for attribute script of element lang
+><key2>SAha</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235139: element lang: validity error : No declaration for attribute lang of element lang
+><key2>SAha</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235139: element lang: validity error : No declaration for element lang
+ey2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:235139: element c: validity error : Element lang is not declared in c list of possible children
+</h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Persian">شاه</lang></c>
+                                                                               ^
+monier_with_tags.xml:235146: element lang: validity error : No declaration for attribute script of element lang
+key2></h><body> <lex>m.</lex> <p>prob.</p> <c>_=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:235146: element lang: validity error : No declaration for attribute lang of element lang
+key2></h><body> <lex>m.</lex> <p>prob.</p> <c>_=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:235146: element lang: validity error : No declaration for element lang
+<lex>m.</lex> <p>prob.</p> <c>_=_ <lang script="A" lang="Arabic">صاحب</lang>
+                                                                               ^
+monier_with_tags.xml:235146: element c: validity error : Element lang is not declared in c list of possible children
+m.</lex> <p>prob.</p> <c>_=_ <lang script="A" lang="Arabic">صاحب</lang> </c>
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for attribute script of element lang
+<hc1>1</hc1><key2>SAhnAma</key2></h><body> <c>=_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for attribute lang of element lang
+<hc1>1</hc1><key2>SAhnAma</key2></h><body> <c>=_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for element lang
+ey2>SAhnAma</key2></h><body> <c>=_ <lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for attribute script of element lang
+=_ <lang script="A" lang="Persian">شاه</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for attribute lang of element lang
+=_ <lang script="A" lang="Persian">شاه</lang> <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:235147: element lang: validity error : No declaration for element lang
+"A" lang="Persian">شاه</lang> <lang script="A" lang="Persian">نامه</lang>
+                                                                               ^
+monier_with_tags.xml:235147: element c: validity error : Element lang is not declared in c list of possible children
+ang="Persian">شاه</lang> <lang script="A" lang="Persian">نامه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:235147: element c: validity error : Element lang is not declared in c list of possible children
+ang="Persian">شاه</lang> <lang script="A" lang="Persian">نامه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for attribute script of element lang
+ilamAna-KAna</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for attribute lang of element lang
+ilamAna-KAna</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for element lang
+/h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic">سليمان</lang>
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for attribute script of element lang
+ang script="A" lang="Arabic">سليمان</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for attribute lang of element lang
+ang script="A" lang="Arabic">سليمان</lang> <lang script="A" lang="Turkish"
+                                                                               ^
+monier_with_tags.xml:235957: element lang: validity error : No declaration for element lang
+ lang="Arabic">سليمان</lang> <lang script="A" lang="Turkish">خان</lang>
+                                                                               ^
+monier_with_tags.xml:235957: element c: validity error : Element lang is not declared in c list of possible children
+="Arabic">سليمان</lang> <lang script="A" lang="Turkish">خان</lang> </c>
+                                                                               ^
+monier_with_tags.xml:235957: element c: validity error : Element lang is not declared in c list of possible children
+="Arabic">سليمان</lang> <lang script="A" lang="Turkish">خان</lang> </c>
+                                                                               ^
+monier_with_tags.xml:260973: element lang: validity error : No declaration for attribute script of element lang
+ama</key2></h><body> <lex>n.</lex> <p>fr._Arabic_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:260973: element lang: validity error : No declaration for attribute lang of element lang
+ama</key2></h><body> <lex>n.</lex> <p>fr._Arabic_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:260973: element lang: validity error : No declaration for element lang
+<body> <lex>n.</lex> <p>fr._Arabic_ <lang script="A" lang="Arabic">سهم</lang>
+                                                                               ^
+monier_with_tags.xml:260973: element p: validity error : Element lang is not declared in p list of possible children
+> <lex>n.</lex> <p>fr._Arabic_ <lang script="A" lang="Arabic">سهم</lang> </p>
+                                                                               ^
+monier_with_tags.xml:264265: element lang: validity error : No declaration for attribute script of element lang
+</key2><hom>2</hom></h><body> <lex>m.</lex> <c>=_<lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:264265: element lang: validity error : No declaration for attribute lang of element lang
+</key2><hom>2</hom></h><body> <lex>m.</lex> <c>=_<lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:264265: element lang: validity error : No declaration for element lang
+/hom></h><body> <lex>m.</lex> <c>=_<lang script="A" lang="Persian">شاه</lang>
+                                                                               ^
+monier_with_tags.xml:264265: element c: validity error : Element lang is not declared in c list of possible children
+</h><body> <lex>m.</lex> <c>=_<lang script="A" lang="Persian">شاه</lang> </c>
+                                                                               ^
+monier_with_tags.xml:273329: element lang: validity error : No declaration for attribute script of element lang
+y2>sekanDara</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:273329: element lang: validity error : No declaration for attribute lang of element lang
+y2>sekanDara</key2></h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:273329: element lang: validity error : No declaration for element lang
+/h><body> <lex>m.</lex> <c>=_ <lang script="A" lang="Arabic">اسكندر</lang>
+                                                                               ^
+monier_with_tags.xml:273329: element c: validity error : Element lang is not declared in c list of possible children
+ang script="A" lang="Arabic">اسكندر</lang>_,_Iskandar_<p>Alexander</p></c>
+                                                                               ^
+monier_with_tags.xml:278215: element lang: validity error : No declaration for attribute script of element lang
+</ls> <p><ab>accord.</ab>~<c>to_some_fr._Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:278215: element lang: validity error : No declaration for attribute lang of element lang
+</ls> <p><ab>accord.</ab>~<c>to_some_fr._Persian <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:278215: element lang: validity error : No declaration for element lang
+</ab>~<c>to_some_fr._Persian <lang script="A" lang="Persian">سِپَرْ</lang>
+                                                                               ^
+monier_with_tags.xml:278215: element c: validity error : Element lang is not declared in c list of possible children
+~<c>to_some_fr._Persian <lang script="A" lang="Persian">سِپَرْ</lang> </c>
+                                                                               ^
+monier_with_tags.xml:278216: element lang: validity error : No declaration for attribute script of element lang
+/ls> <p><ab>accord.</ab>~<c>to_some_fr._Persian_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:278216: element lang: validity error : No declaration for attribute lang of element lang
+/ls> <p><ab>accord.</ab>~<c>to_some_fr._Persian_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:278216: element lang: validity error : No declaration for element lang
+/ab>~<c>to_some_fr._Persian_ <lang script="A" lang="Persian">سِپَرْ</lang>
+                                                                               ^
+monier_with_tags.xml:278216: element c: validity error : Element lang is not declared in c list of possible children
+~<c>to_some_fr._Persian_ <lang script="A" lang="Persian">سِپَرْ</lang></c>
+                                                                               ^
+monier_with_tags.xml:284563: element lang: validity error : No declaration for attribute script of element lang
+at-prakASa</key2></h><body> <lex>m.</lex> <p>fr._ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:284563: element lang: validity error : No declaration for attribute lang of element lang
+at-prakASa</key2></h><body> <lex>m.</lex> <p>fr._ <lang script="A" lang="Arabic"
+                                                                               ^
+monier_with_tags.xml:284563: element lang: validity error : No declaration for element lang
+></h><body> <lex>m.</lex> <p>fr._ <lang script="A" lang="Arabic">حكمت</lang>
+                                                                               ^
+monier_with_tags.xml:284563: element p: validity error : Element lang is not declared in p list of possible children
+><body> <lex>m.</lex> <p>fr._ <lang script="A" lang="Arabic">حكمت</lang></p>
+                                                                               ^
+monier_with_tags.xml:284710: element lang: validity error : No declaration for attribute script of element lang
+ey2></h><body> <lex>m.</lex> <p>fr._the_Persian_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:284710: element lang: validity error : No declaration for attribute lang of element lang
+ey2></h><body> <lex>m.</lex> <p>fr._the_Persian_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:284710: element lang: validity error : No declaration for element lang
+lex>m.</lex> <p>fr._the_Persian_ <lang script="A" lang="Persian">هندو</lang>
+                                                                               ^
+monier_with_tags.xml:284710: element p: validity error : Element lang is not declared in p list of possible children
+m.</lex> <p>fr._the_Persian_ <lang script="A" lang="Persian">هندو</lang></p>
+                                                                               ^
+monier_with_tags.xml:285391: element lang: validity error : No declaration for attribute script of element lang
+key2></h><body> <lex>f.</lex> <p><ab>Pers.</ab>_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:285391: element lang: validity error : No declaration for attribute lang of element lang
+key2></h><body> <lex>f.</lex> <p><ab>Pers.</ab>_ <lang script="A" lang="Persian"
+                                                                               ^
+monier_with_tags.xml:285391: element lang: validity error : No declaration for element lang
+<lex>f.</lex> <p><ab>Pers.</ab>_ <lang script="A" lang="Persian">هندي</lang>
+                                                                               ^
+monier_with_tags.xml:285391: element p: validity error : Element lang is not declared in p list of possible children
+>f.</lex> <p><ab>Pers.</ab>_ <lang script="A" lang="Persian">هندي</lang></p>
