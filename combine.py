@@ -2,6 +2,9 @@
 
 Integrates the modified lines (now containing etymologies) into the original
 dictionary.
+
+NOTE: This file contains tests, which can be run using Py Test. They will be
+ignored if you simply run the script itself.
 """
 from collections import defaultdict
 from re import search
