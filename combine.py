@@ -3,7 +3,6 @@
 Integrates the modified lines (now containing etymologies) into the original
 dictionary.
 """
-from pprint import pprint
 
 
 def check_line_match(ori_line, mod_line):
