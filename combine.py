@@ -106,9 +106,11 @@ def replace_lines(i_file, o_file, lines_to_insert):
 
     print("Number of lines modified: {}".format(no_lines_modified))
     if len(lines_to_insert) != no_lines_modified:
-        print("ERROR: {} modifications were expected.".format(no_lines_modified))
+        print("ERROR: {} modifications were expected.".format(
+            no_lines_modified))
     else:
         print("GOOD: That's the number expected.")
+
 
 # Tests
 def test_check_line_arabic_fail():
@@ -229,5 +231,6 @@ def main():
     print("Making the changes")
     replace_lines("monier.xml", "monier_with_tags.xml", lines_to_insert)
     print("Complete")
+
 
 main()
