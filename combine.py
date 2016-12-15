@@ -22,16 +22,21 @@ def check_line_arabic(line):
 
 def check_multi_line_arabic(lines):
     """Check to make sure that all lines contain Arabic"""
-    # TODO: Check all before stopping
+
+    errors = defaultdict(list)
 
     for line_no, content in lines.items():
         if check_line_arabic(content) is False:
+            errors[line_no] = content
+
+    if errors:
+        for line_no, content in errors.items():
             print(
                 "ERROR: Line does not contain Arabic, it should not be replaced:\n{}: {}".format(
                     line_no, content))
-            return False
-
-    return True
+        return False
+    else:
+        return True
 
 
 def parse_mod_line(i_string):
