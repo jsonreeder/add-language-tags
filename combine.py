@@ -36,6 +36,7 @@ def check_multi_line_arabic(lines):
                     line_no, content))
         return False
     else:
+        print("GOOD: All selected lines contain Arabic")
         return True
 
 
@@ -70,7 +71,7 @@ def parse_all_mod_lines(i_file):
 def get_line_nos_to_modify(parsed_lines):
     """Extract the line numbers to be modified from the modified lines"""
 
-    return tuple(line[0] for line in parsed_lines)
+    return tuple(parsed_lines.keys())
 
 
 def get_lines_to_modify(i_file, line_nos):
@@ -192,11 +193,15 @@ def main():
     """Implement helper functions"""
 
     # Get data
-    # lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
-    # line_nos_to_modify = get_line_nos_to_modify(lines_to_insert)
-    # lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
+    print("Getting Data")
+    lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
+    line_nos_to_modify = get_line_nos_to_modify(lines_to_insert)
+    lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
 
     # Validate data
+    print("Validating Data")
+    check_multi_line_arabic(lines_to_modify)
 
+    print("Complete")
 
 main()
