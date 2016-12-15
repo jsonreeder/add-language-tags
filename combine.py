@@ -4,19 +4,34 @@ Integrates the modified lines (now containing etymologies) into the original
 dictionary.
 """
 from collections import defaultdict
+from re import search
 
 
 # Helper functions
-def check_line_match(ori_line, mod_line):
-    """Check to make sure that the lines match up"""
+def check_line_arabic(line):
+    """Check to make sure that there is Arabic in the original line
 
-    if ori_line[10] == mod_line[10]:
-        return True
-    else:
-        print(
-            "ERROR: These were expected to match:\nOriginal:\n{}\nModified:\n{}\n".format(
-                ori_line, mod_line))
-        return False
+    This is an effective way to check and make sure that the right line has
+    been selected. A more detailed comparison of the lines would require
+    parsing the XML, since errors can be very hard to detect due to the fact
+    that adjacent lines in the dictionary share much of the same text.
+    """
+
+    return bool(search("[\u0600-ۿ]", line))
+
+
+def check_multi_line_match(ori_lines, mod_lines):
+    """Check to make sure that all lines match up"""
+
+    for line_no, content in mod_lines.items():
+        try:
+            matching_ori_line = ori_lines[line_no]
+            check_line_match(matching_ori_line, content) is true
+        except:
+            print("ERROR: Original lines and modified lines do not match")
+            return False
+
+    return True
 
 
 def parse_mod_line(i_string):
@@ -67,22 +82,60 @@ def get_lines_to_modify(i_file, line_nos):
 
 
 # Tests
-def test_check_line_match_fail():
-    """Make sure that different lines do not match up"""
+def test_check_line_arabic_fail():
+    """Make sure that a given line does not contain Arabic"""
 
-    ori_line = '<H1B><h><hc3>110</hc3><key1>ara</key1><hc1>1</hc1><key2>ara</key2></h><body> <lex>n.</lex> <c>the_spoke_of_a_wheel</c> <ls>L.</ls> </body><tail><pc>86,2</pc> <L>15012</L></tail></H1B> '
-    mod_line = '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3> '
+    line = '<H1B><h><hc3>110</hc3><key1>ara</key1><hc1>1</hc1><key2>ara</key2></h><body> <lex>n.</lex> <c>the_spoke_of_a_wheel</c> <ls>L.</ls> </body><tail><pc>86,2</pc> <L>15012</L></tail></H1B> '
 
-    assert check_line_match(ori_line, mod_line) is False
+    assert check_line_arabic(line) is False
 
 
-def test_check_line_match_pass():
-    """Make sure that similar lines do match up"""
+def test_check_line_arabic_pass():
+    """Make sure that a given line contains Arabic"""
 
-    ori_line = '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ ارهٿ</p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3> '
-    mod_line = '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3> '
+    line = '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ ارهٿ</p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3> '
 
-    assert check_line_match(ori_line, mod_line)
+    assert check_line_arabic(line)
+
+
+# def test_check_multi_line_match_fail():
+#     """Make sure that different lines do not match up, in multiples"""
+
+#     ori_lines = defaultdict(list, {
+#         17762:
+#         '<H3A><h><hc3>100</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex type="inh">m.</lex> <c>a_well</c> <ls>Ra1jat.</ls> </body><tail><MW>011040</MW> <pc>86,2</pc> <L>15015</L></tail></H3A>\n',
+#         20012:
+#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
+#     })
+
+#     mod_lines = defaultdict(list, {
+#         17762:
+#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>',
+#         20012:
+#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic">العابدينا</lang> , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>'
+#     })
+
+#     assert check_line_match(ori_lines, mod_lines)
+
+
+# def test_check_multi_line_match_success():
+#     """Make sure that different lines do not match up, in multiples"""
+
+#     ori_lines = defaultdict(list, {
+#         17762:
+#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ ارهٿ</p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>\n',
+#         20012:
+#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = العابدينا , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>\n'
+#     })
+
+#     mod_lines = defaultdict(list, {
+#         17762:
+#         '<H3><h><hc3>110</hc3><key1>araGawwa</key1><hc1>3</hc1><key2>ara--Gawwa</key2></h><body> <lex>m.</lex> <c>a_wheel_or_machine_for_raising_water_from_a_well_<p><ab>Hind.</ab>_ <lang script="A" lang="Hindustani">ارهٿ</lang></p></c> <ls>Pan5cat.</ls> </body><tail><pc>86,2</pc> <L>15014</L></tail></H3>',
+#         20012:
+#         '<H1><h><hc3>000</hc3><key1>allApadIna</key1><hc1>1</hc1><key2>allApadIna</key2></h><body> <lex>m.</lex> = <lang script="A" lang="Arabic">العابدينا</lang> , <ab>N.</ab> of a king, <ls>Sa1h.</ls> (<ab>v.l.</ab>).</body><tail><pc>1316,3</pc><L supL="314380">16937.2</L></tail></H1>'
+#     })
+
+#     assert check_line_match(ori_lines, mod_lines)
 
 
 def test_parse_mod_line():
@@ -148,9 +201,9 @@ def main():
     """Implement helper functions"""
 
     # Get data
-    lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
-    line_nos_to_modify = get_line_nos_to_modify(parsed)
-    lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
+    # lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
+    # line_nos_to_modify = get_line_nos_to_modify(lines_to_insert)
+    # lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
 
     # Validate data
 
