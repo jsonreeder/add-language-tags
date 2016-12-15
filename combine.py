@@ -90,6 +90,26 @@ def get_lines_to_modify(i_file, line_nos):
     return lines
 
 
+def replace_lines(i_file, o_file, lines_to_insert):
+    """Insert lines into file, delete original lines in their places"""
+
+    line_nos = get_line_nos_to_modify(lines_to_insert)
+    no_lines_modified = 0
+
+    with open(i_file, "r") as fin, open(o_file, "w") as fout:
+        for idx, line in enumerate(fin):
+            if idx in line_nos:
+                fout.write(lines_to_insert[idx] + "\n")
+                no_lines_modified += 1
+            else:
+                fout.write(line)
+
+    print("Number of lines modified: {}".format(no_lines_modified))
+    if len(lines_to_insert) != no_lines_modified:
+        print("ERROR: {} modifications were expected.".format(no_lines_modified))
+    else:
+        print("GOOD: That's the number expected.")
+
 # Tests
 def test_check_line_arabic_fail():
     """Make sure that a given line does not contain Arabic"""
@@ -196,15 +216,18 @@ def main():
     """Implement helper functions"""
 
     # Get data
-    print("Getting Data")
+    print("Getting data")
     lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
     line_nos_to_modify = get_line_nos_to_modify(lines_to_insert)
     lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
 
     # Validate data
-    print("Validating Data")
+    print("Validating data")
     check_multi_line_arabic(lines_to_modify)
 
+    # Make the changes
+    print("Making the changes")
+    replace_lines("monier.xml", "monier_with_tags.xml", lines_to_insert)
     print("Complete")
 
 main()
