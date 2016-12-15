@@ -53,7 +53,7 @@ def get_lines_to_modify(i_file, line_nos):
     for lno in line_nos:
         with open(i_file, "r") as f:
             line = f.readlines()[lno]
-            lines.append(line)
+            lines.append((lno, line))
 
     return lines
 
@@ -111,9 +111,10 @@ def test_get_lines_single():
 
     lines = get_lines_to_modify("monier.xml", [10])
 
-    expected = [
+    expected = [(
+        10,
         '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n'
-    ]
+    )]
     assert lines == expected
 
 
@@ -122,11 +123,15 @@ def test_get_lines_multiple():
 
     lines = get_lines_to_modify("monier.xml", [10, 11, 12])
 
-    expected = [
-        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n',
-        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>occasionally_denoting_comparison</c> <p><s>a-brAhmaRa</s>~<c>like_a_<as0>Brahman</as0><as1><s>brahman</s></as1></c>~<ls>T.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.2</L></tail></H1A>\n',
+    expected = [(
+        10,
+        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>rarely_prefixed_to_<ab>Inf.</ab></c> <p><s>a-svaptum</s>~<c>not_to_sleep</c>~<ls>Ta1n2d2yaBr.</ls></p> <c>and_even_to_forms_of_the_finite_verb</c> <p><s>a-spfhayanti</s>~<c>they_do_not_desire</c>~<ls>BhP.</ls>~<ls>S3is3.</ls></p> <c>and_to_pronouns</c> <p><s>a-saH</s>~<c>not_he</c>~<ls>S3is3.</ls>~;~<s>a-tad</s>~<c>not_that</c>~<ls>BhP.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.1</L></tail></H1A>\n'
+    ), (
+        11,
+        '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>occasionally_denoting_comparison</c> <p><s>a-brAhmaRa</s>~<c>like_a_<as0>Brahman</as0><as1><s>brahman</s></as1></c>~<ls>T.</ls></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.2</L></tail></H1A>\n'
+    ), (12,
         '<H1A><h><hc3>000</hc3><key1>a</key1><hc1>1</hc1><key2>a</key2></h><body>  <c>sometimes_disparagement</c> <p><s>a-yajYa</s>~<c>a_miserable_sacrifice</c></p>  </body><tail><mul/>  <pc>1,1</pc> <L>4.3</L></tail></H1A>\n'
-    ]
+        )]
     assert lines == expected
 
 
