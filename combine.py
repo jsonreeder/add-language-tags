@@ -5,6 +5,7 @@ dictionary.
 """
 
 
+# Helper functions
 def check_line_match(ori_line, mod_line):
     """Check to make sure that the lines match up"""
 
@@ -57,6 +58,7 @@ def get_lines_to_modify(i_file, line_nos):
     return lines
 
 
+# Tests
 def test_check_line_match_fail():
     """Make sure that different lines do not match up"""
 
@@ -134,9 +136,16 @@ def test_get_lines_multiple():
     assert lines == expected
 
 
+# Implementation
 def main():
-    parsed = parse_all_mod_lines("monier_lines_with_tags.xml")
-    print(parsed[0:3])
+    """Implement helper functions"""
+
+    # Get data
+    lines_to_insert = parse_all_mod_lines("monier_lines_with_tags.xml")
+    line_nos_to_modify = get_line_nos_to_modify(parsed)
+    lines_to_modify = get_lines_to_modify("monier.xml", line_nos_to_modify)
+
+    # Validate data
 
 
 main()
