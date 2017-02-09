@@ -3,7 +3,7 @@
 ** Spaces with Arabic
 - I notice that the Arabic is always surrounded by a space on either side:
   : </lex> = العابدينا ,
-- I would no expect a space before the period:
+- I would not expect a space before the period:
   : </lex> = العابدينا,
 ** Hindustani
 - The dictionary refers to "Hindustani" (line 154092)
